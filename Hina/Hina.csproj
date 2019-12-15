@@ -46,6 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookRecording.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookRecording.Designer.cs">
+      <DependentUpon>BookRecording.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookLend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookLend.Designer.cs">
+      <DependentUpon>BookLend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonRecording.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonRecording.designer.cs">
+      <DependentUpon>PersonRecording.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +102,21 @@
     <Compile Include="RegisterStaff.Designer.cs">
       <DependentUpon>RegisterStaff.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BookRecording.resx">
+      <DependentUpon>BookRecording.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookLend.resx">
+      <DependentUpon>BookLend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonRecording.resx">
+      <DependentUpon>PersonRecording.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,8 +129,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RegisterMember.resx">
+      <DependentUpon>RegisterMember.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegisterOption.resx">
       <DependentUpon>RegisterOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterStaff.resx">
+      <DependentUpon>RegisterStaff.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
