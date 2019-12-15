@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace VTYS2
+namespace Hina
 {
-    public partial class Form1 : Form
+    public partial class ChangePassword : Form
     {
-        public Form1()
+        public ChangePassword()
         {
             InitializeComponent();
         }

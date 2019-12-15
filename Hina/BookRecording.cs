@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace VTYS0
+namespace Hina
 {
-    public partial class Form1 : Form
+    public partial class BookRecording : Form
     {
-        public Form1()
+        public BookRecording()
         {
             InitializeComponent();
         }
