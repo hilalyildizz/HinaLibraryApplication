@@ -16,5 +16,15 @@ namespace Hina
         {
             InitializeComponent();
         }
+
+        private void txtbeposta_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btngiris_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

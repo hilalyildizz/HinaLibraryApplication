@@ -114,6 +114,7 @@
             this.btngiris.TabIndex = 3;
             this.btngiris.Text = "GİRİŞ";
             this.btngiris.UseVisualStyleBackColor = false;
+            this.btngiris.Click += new System.EventHandler(this.btngiris_Click);
             // 
             // txtbsifre
             // 
@@ -130,6 +131,7 @@
             this.txtbeposta.Name = "txtbeposta";
             this.txtbeposta.Size = new System.Drawing.Size(174, 27);
             this.txtbeposta.TabIndex = 1;
+            this.txtbeposta.TextChanged += new System.EventHandler(this.txtbeposta_TextChanged);
             // 
             // label1
             // 
