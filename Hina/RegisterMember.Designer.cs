@@ -363,6 +363,7 @@
             // 
             // pctrbxGeri
             // 
+            this.pctrbxGeri.BackColor = System.Drawing.Color.Transparent;
             this.pctrbxGeri.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxGeri.Image")));
             this.pctrbxGeri.Location = new System.Drawing.Point(12, 12);
             this.pctrbxGeri.Name = "pctrbxGeri";
@@ -373,6 +374,7 @@
             // 
             // pctrbxAnasayfa
             // 
+            this.pctrbxAnasayfa.BackColor = System.Drawing.Color.Transparent;
             this.pctrbxAnasayfa.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxAnasayfa.Image")));
             this.pctrbxAnasayfa.Location = new System.Drawing.Point(530, 12);
             this.pctrbxAnasayfa.Name = "pctrbxAnasayfa";

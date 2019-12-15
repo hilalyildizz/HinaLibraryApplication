@@ -70,12 +70,12 @@
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pctrbxGeri = new System.Windows.Forms.PictureBox();
+            this.pctrbxAnasayfa = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxAnasayfa)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -415,33 +415,35 @@
             // 
             this.columnHeader7.Text = "Adres";
             // 
-            // pictureBox1
+            // pctrbxGeri
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(18, 22);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 32;
-            this.pictureBox1.TabStop = false;
+            this.pctrbxGeri.BackColor = System.Drawing.Color.Transparent;
+            this.pctrbxGeri.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxGeri.Image")));
+            this.pctrbxGeri.Location = new System.Drawing.Point(12, 12);
+            this.pctrbxGeri.Name = "pctrbxGeri";
+            this.pctrbxGeri.Size = new System.Drawing.Size(18, 22);
+            this.pctrbxGeri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctrbxGeri.TabIndex = 32;
+            this.pctrbxGeri.TabStop = false;
             // 
-            // pictureBox2
+            // pctrbxAnasayfa
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(451, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 22);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 33;
-            this.pictureBox2.TabStop = false;
+            this.pctrbxAnasayfa.BackColor = System.Drawing.Color.Transparent;
+            this.pctrbxAnasayfa.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxAnasayfa.Image")));
+            this.pctrbxAnasayfa.Location = new System.Drawing.Point(451, 12);
+            this.pctrbxAnasayfa.Name = "pctrbxAnasayfa";
+            this.pctrbxAnasayfa.Size = new System.Drawing.Size(24, 22);
+            this.pctrbxAnasayfa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctrbxAnasayfa.TabIndex = 33;
+            this.pctrbxAnasayfa.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(487, 359);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pctrbxAnasayfa);
+            this.Controls.Add(this.pctrbxGeri);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.bttnKaydiGuncelle);
             this.Controls.Add(this.bttnKaydiSil);
@@ -469,8 +471,8 @@
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxAnasayfa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -519,8 +521,8 @@
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.ColumnHeader columnHeader7;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pctrbxGeri;
+        private System.Windows.Forms.PictureBox pctrbxAnasayfa;
     }
 }
 

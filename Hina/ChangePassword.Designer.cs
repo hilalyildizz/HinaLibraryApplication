@@ -41,10 +41,10 @@
             this.txtbSifreHatirlatici = new System.Windows.Forms.TextBox();
             this.bttnKaydet = new System.Windows.Forms.Button();
             this.bttnGeri = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pctrbxGeri = new System.Windows.Forms.PictureBox();
+            this.pctrbxAnasayfa = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxAnasayfa)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -145,33 +145,35 @@
             this.bttnGeri.Text = "Geri";
             this.bttnGeri.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // pctrbxGeri
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(24, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(23, 26);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
+            this.pctrbxGeri.BackColor = System.Drawing.Color.Transparent;
+            this.pctrbxGeri.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxGeri.Image")));
+            this.pctrbxGeri.Location = new System.Drawing.Point(24, 13);
+            this.pctrbxGeri.Name = "pctrbxGeri";
+            this.pctrbxGeri.Size = new System.Drawing.Size(23, 26);
+            this.pctrbxGeri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctrbxGeri.TabIndex = 12;
+            this.pctrbxGeri.TabStop = false;
             // 
-            // pictureBox2
+            // pctrbxAnasayfa
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(379, 13);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(28, 26);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
+            this.pctrbxAnasayfa.BackColor = System.Drawing.Color.Transparent;
+            this.pctrbxAnasayfa.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxAnasayfa.Image")));
+            this.pctrbxAnasayfa.Location = new System.Drawing.Point(379, 13);
+            this.pctrbxAnasayfa.Name = "pctrbxAnasayfa";
+            this.pctrbxAnasayfa.Size = new System.Drawing.Size(28, 26);
+            this.pctrbxAnasayfa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctrbxAnasayfa.TabIndex = 13;
+            this.pctrbxAnasayfa.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(419, 360);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pctrbxAnasayfa);
+            this.Controls.Add(this.pctrbxGeri);
             this.Controls.Add(this.bttnGeri);
             this.Controls.Add(this.bttnKaydet);
             this.Controls.Add(this.txtbSifreHatirlatici);
@@ -186,8 +188,8 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxAnasayfa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,8 +209,8 @@
         private System.Windows.Forms.TextBox txtbSifreHatirlatici;
         private System.Windows.Forms.Button bttnKaydet;
         private System.Windows.Forms.Button bttnGeri;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pctrbxGeri;
+        private System.Windows.Forms.PictureBox pctrbxAnasayfa;
     }
 }
 
