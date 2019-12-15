@@ -33,8 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +55,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adres.cs">
+      <DependentUpon>HinaDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="BookRecording.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +81,39 @@
     </Compile>
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HinaDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HinaDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HinaDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HinaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HinaDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HinaDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Kategori.cs">
+      <DependentUpon>HinaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Kitap.cs">
+      <DependentUpon>HinaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici.cs">
+      <DependentUpon>HinaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Odunc.cs">
+      <DependentUpon>HinaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Personel.cs">
+      <DependentUpon>HinaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Personeller.cs">
+      <DependentUpon>HinaDB.tt</DependentUpon>
     </Compile>
     <Compile Include="PersonRecording.cs">
       <SubType>Form</SubType>
@@ -101,6 +146,27 @@
     </Compile>
     <Compile Include="RegisterStaff.Designer.cs">
       <DependentUpon>RegisterStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>HinaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>HinaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>HinaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tur.cs">
+      <DependentUpon>HinaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Uye.cs">
+      <DependentUpon>HinaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="YayinEvi.cs">
+      <DependentUpon>HinaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Yazar.cs">
+      <DependentUpon>HinaDB.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="BookRecording.resx">
       <DependentUpon>BookRecording.cs</DependentUpon>
@@ -138,6 +204,14 @@
     <EmbeddedResource Include="RegisterStaff.resx">
       <DependentUpon>RegisterStaff.cs</DependentUpon>
     </EmbeddedResource>
+    <EntityDeploy Include="HinaDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HinaDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="HinaDB.edmx.diagram">
+      <DependentUpon>HinaDB.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -150,6 +224,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HinaDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>HinaDB.Context.cs</LastGenOutput>
+      <DependentUpon>HinaDB.edmx</DependentUpon>
+    </Content>
+    <Content Include="HinaDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HinaDB.edmx</DependentUpon>
+      <LastGenOutput>HinaDB.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
