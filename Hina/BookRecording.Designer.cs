@@ -50,9 +50,6 @@
             this.bttnSil = new System.Windows.Forms.Button();
             this.bttnGuncelle = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bttnAramaTemizle = new System.Windows.Forms.Button();
-            this.bttnAramaBul = new System.Windows.Forms.Button();
-            this.txtbArama = new System.Windows.Forms.TextBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -62,17 +59,20 @@
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.pctrbxAnasayfa = new System.Windows.Forms.PictureBox();
+            this.txtbArama = new System.Windows.Forms.TextBox();
+            this.bttnAramaTemizle = new System.Windows.Forms.Button();
+            this.bttnAramaBul = new System.Windows.Forms.Button();
+            this.pctrbxSayfayiKapat = new System.Windows.Forms.PictureBox();
             this.pctrbxGeri = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxAnasayfa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxSayfayiKapat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 29);
+            this.label1.Location = new System.Drawing.Point(163, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 13);
             this.label1.TabIndex = 0;
@@ -81,7 +81,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 58);
+            this.label2.Location = new System.Drawing.Point(163, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(26, 13);
             this.label2.TabIndex = 1;
@@ -90,7 +90,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 87);
+            this.label3.Location = new System.Drawing.Point(163, 125);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 13);
             this.label3.TabIndex = 3;
@@ -100,7 +100,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 115);
+            this.label4.Location = new System.Drawing.Point(163, 153);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 13);
             this.label4.TabIndex = 5;
@@ -109,7 +109,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(216, 29);
+            this.label5.Location = new System.Drawing.Point(351, 67);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 13);
             this.label5.TabIndex = 7;
@@ -118,7 +118,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(216, 58);
+            this.label6.Location = new System.Drawing.Point(351, 96);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 13);
             this.label6.TabIndex = 9;
@@ -127,7 +127,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(216, 87);
+            this.label7.Location = new System.Drawing.Point(351, 125);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(46, 13);
             this.label7.TabIndex = 11;
@@ -136,7 +136,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(216, 115);
+            this.label8.Location = new System.Drawing.Point(351, 153);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(23, 13);
             this.label8.TabIndex = 13;
@@ -144,63 +144,63 @@
             // 
             // txtbIsbn
             // 
-            this.txtbIsbn.Location = new System.Drawing.Point(84, 26);
+            this.txtbIsbn.Location = new System.Drawing.Point(219, 64);
             this.txtbIsbn.Name = "txtbIsbn";
             this.txtbIsbn.Size = new System.Drawing.Size(100, 20);
             this.txtbIsbn.TabIndex = 15;
             // 
             // txtbKod
             // 
-            this.txtbKod.Location = new System.Drawing.Point(84, 58);
+            this.txtbKod.Location = new System.Drawing.Point(219, 96);
             this.txtbKod.Name = "txtbKod";
             this.txtbKod.Size = new System.Drawing.Size(100, 20);
             this.txtbKod.TabIndex = 17;
             // 
             // txtbKitapAdi
             // 
-            this.txtbKitapAdi.Location = new System.Drawing.Point(84, 87);
+            this.txtbKitapAdi.Location = new System.Drawing.Point(219, 125);
             this.txtbKitapAdi.Name = "txtbKitapAdi";
             this.txtbKitapAdi.Size = new System.Drawing.Size(100, 20);
             this.txtbKitapAdi.TabIndex = 19;
             // 
             // txtbYazar
             // 
-            this.txtbYazar.Location = new System.Drawing.Point(84, 115);
+            this.txtbYazar.Location = new System.Drawing.Point(219, 153);
             this.txtbYazar.Name = "txtbYazar";
             this.txtbYazar.Size = new System.Drawing.Size(100, 20);
             this.txtbYazar.TabIndex = 21;
             // 
             // txtbYayinevi
             // 
-            this.txtbYayinevi.Location = new System.Drawing.Point(288, 26);
+            this.txtbYayinevi.Location = new System.Drawing.Point(423, 64);
             this.txtbYayinevi.Name = "txtbYayinevi";
             this.txtbYayinevi.Size = new System.Drawing.Size(100, 20);
             this.txtbYayinevi.TabIndex = 23;
             // 
             // txtbBasimTarihi
             // 
-            this.txtbBasimTarihi.Location = new System.Drawing.Point(288, 55);
+            this.txtbBasimTarihi.Location = new System.Drawing.Point(423, 93);
             this.txtbBasimTarihi.Name = "txtbBasimTarihi";
             this.txtbBasimTarihi.Size = new System.Drawing.Size(100, 20);
             this.txtbBasimTarihi.TabIndex = 25;
             // 
             // txtbKategori
             // 
-            this.txtbKategori.Location = new System.Drawing.Point(288, 84);
+            this.txtbKategori.Location = new System.Drawing.Point(423, 122);
             this.txtbKategori.Name = "txtbKategori";
             this.txtbKategori.Size = new System.Drawing.Size(100, 20);
             this.txtbKategori.TabIndex = 27;
             // 
             // txtbTur
             // 
-            this.txtbTur.Location = new System.Drawing.Point(288, 115);
+            this.txtbTur.Location = new System.Drawing.Point(423, 153);
             this.txtbTur.Name = "txtbTur";
             this.txtbTur.Size = new System.Drawing.Size(100, 20);
             this.txtbTur.TabIndex = 29;
             // 
             // bttnTemizle
             // 
-            this.bttnTemizle.Location = new System.Drawing.Point(197, 150);
+            this.bttnTemizle.Location = new System.Drawing.Point(332, 188);
             this.bttnTemizle.Name = "bttnTemizle";
             this.bttnTemizle.Size = new System.Drawing.Size(55, 28);
             this.bttnTemizle.TabIndex = 30;
@@ -209,7 +209,7 @@
             // 
             // bttnKaydet
             // 
-            this.bttnKaydet.Location = new System.Drawing.Point(61, 184);
+            this.bttnKaydet.Location = new System.Drawing.Point(196, 222);
             this.bttnKaydet.Name = "bttnKaydet";
             this.bttnKaydet.Size = new System.Drawing.Size(75, 23);
             this.bttnKaydet.TabIndex = 32;
@@ -218,7 +218,7 @@
             // 
             // bttnSil
             // 
-            this.bttnSil.Location = new System.Drawing.Point(188, 184);
+            this.bttnSil.Location = new System.Drawing.Point(323, 222);
             this.bttnSil.Name = "bttnSil";
             this.bttnSil.Size = new System.Drawing.Size(75, 23);
             this.bttnSil.TabIndex = 34;
@@ -227,7 +227,7 @@
             // 
             // bttnGuncelle
             // 
-            this.bttnGuncelle.Location = new System.Drawing.Point(322, 184);
+            this.bttnGuncelle.Location = new System.Drawing.Point(457, 222);
             this.bttnGuncelle.Name = "bttnGuncelle";
             this.bttnGuncelle.Size = new System.Drawing.Size(75, 23);
             this.bttnGuncelle.TabIndex = 36;
@@ -240,37 +240,12 @@
             this.groupBox1.Controls.Add(this.txtbArama);
             this.groupBox1.Controls.Add(this.bttnAramaTemizle);
             this.groupBox1.Controls.Add(this.bttnAramaBul);
-            this.groupBox1.Location = new System.Drawing.Point(3, 212);
+            this.groupBox1.Location = new System.Drawing.Point(66, 250);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(476, 130);
+            this.groupBox1.Size = new System.Drawing.Size(619, 177);
             this.groupBox1.TabIndex = 37;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kayıtlı Kitapların Listesi";
-            // 
-            // bttnAramaTemizle
-            // 
-            this.bttnAramaTemizle.Location = new System.Drawing.Point(265, 19);
-            this.bttnAramaTemizle.Name = "bttnAramaTemizle";
-            this.bttnAramaTemizle.Size = new System.Drawing.Size(75, 23);
-            this.bttnAramaTemizle.TabIndex = 34;
-            this.bttnAramaTemizle.Text = "Temizle";
-            this.bttnAramaTemizle.UseVisualStyleBackColor = true;
-            // 
-            // bttnAramaBul
-            // 
-            this.bttnAramaBul.Location = new System.Drawing.Point(184, 19);
-            this.bttnAramaBul.Name = "bttnAramaBul";
-            this.bttnAramaBul.Size = new System.Drawing.Size(75, 23);
-            this.bttnAramaBul.TabIndex = 33;
-            this.bttnAramaBul.Text = "Bul";
-            this.bttnAramaBul.UseVisualStyleBackColor = true;
-            // 
-            // txtbArama
-            // 
-            this.txtbArama.Location = new System.Drawing.Point(33, 21);
-            this.txtbArama.Name = "txtbArama";
-            this.txtbArama.Size = new System.Drawing.Size(134, 20);
-            this.txtbArama.TabIndex = 51;
             // 
             // listView1
             // 
@@ -284,9 +259,9 @@
             this.columnHeader7,
             this.columnHeader8});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 47);
+            this.listView1.Location = new System.Drawing.Point(6, 48);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(470, 77);
+            this.listView1.Size = new System.Drawing.Size(607, 123);
             this.listView1.TabIndex = 52;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -323,16 +298,41 @@
             // 
             this.columnHeader8.Text = "Tür";
             // 
-            // pctrbxAnasayfa
+            // txtbArama
             // 
-            this.pctrbxAnasayfa.BackColor = System.Drawing.Color.Transparent;
-            this.pctrbxAnasayfa.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxAnasayfa.Image")));
-            this.pctrbxAnasayfa.Location = new System.Drawing.Point(437, 12);
-            this.pctrbxAnasayfa.Name = "pctrbxAnasayfa";
-            this.pctrbxAnasayfa.Size = new System.Drawing.Size(36, 30);
-            this.pctrbxAnasayfa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctrbxAnasayfa.TabIndex = 38;
-            this.pctrbxAnasayfa.TabStop = false;
+            this.txtbArama.Location = new System.Drawing.Point(33, 21);
+            this.txtbArama.Name = "txtbArama";
+            this.txtbArama.Size = new System.Drawing.Size(202, 20);
+            this.txtbArama.TabIndex = 51;
+            // 
+            // bttnAramaTemizle
+            // 
+            this.bttnAramaTemizle.Location = new System.Drawing.Point(382, 18);
+            this.bttnAramaTemizle.Name = "bttnAramaTemizle";
+            this.bttnAramaTemizle.Size = new System.Drawing.Size(75, 23);
+            this.bttnAramaTemizle.TabIndex = 34;
+            this.bttnAramaTemizle.Text = "Temizle";
+            this.bttnAramaTemizle.UseVisualStyleBackColor = true;
+            // 
+            // bttnAramaBul
+            // 
+            this.bttnAramaBul.Location = new System.Drawing.Point(256, 18);
+            this.bttnAramaBul.Name = "bttnAramaBul";
+            this.bttnAramaBul.Size = new System.Drawing.Size(75, 23);
+            this.bttnAramaBul.TabIndex = 33;
+            this.bttnAramaBul.Text = "Bul";
+            this.bttnAramaBul.UseVisualStyleBackColor = true;
+            // 
+            // pctrbxSayfayiKapat
+            // 
+            this.pctrbxSayfayiKapat.BackColor = System.Drawing.Color.Transparent;
+            this.pctrbxSayfayiKapat.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxSayfayiKapat.Image")));
+            this.pctrbxSayfayiKapat.Location = new System.Drawing.Point(724, 12);
+            this.pctrbxSayfayiKapat.Name = "pctrbxSayfayiKapat";
+            this.pctrbxSayfayiKapat.Size = new System.Drawing.Size(36, 30);
+            this.pctrbxSayfayiKapat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctrbxSayfayiKapat.TabIndex = 38;
+            this.pctrbxSayfayiKapat.TabStop = false;
             // 
             // pctrbxGeri
             // 
@@ -345,13 +345,13 @@
             this.pctrbxGeri.TabIndex = 39;
             this.pctrbxGeri.TabStop = false;
             // 
-            // Form1
+            // BookRecording
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 354);
+            this.ClientSize = new System.Drawing.Size(772, 450);
             this.Controls.Add(this.pctrbxGeri);
-            this.Controls.Add(this.pctrbxAnasayfa);
+            this.Controls.Add(this.pctrbxSayfayiKapat);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.bttnGuncelle);
             this.Controls.Add(this.bttnSil);
@@ -374,11 +374,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "BookRecording";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxAnasayfa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxSayfayiKapat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -420,7 +420,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;
-        private System.Windows.Forms.PictureBox pctrbxAnasayfa;
+        private System.Windows.Forms.PictureBox pctrbxSayfayiKapat;
         private System.Windows.Forms.PictureBox pctrbxGeri;
     }
 }

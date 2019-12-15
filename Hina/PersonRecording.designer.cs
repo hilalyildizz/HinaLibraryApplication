@@ -59,9 +59,6 @@
             this.bttnKaydiSil = new System.Windows.Forms.Button();
             this.bttnKaydiGuncelle = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bttnAramaTemizle = new System.Windows.Forms.Button();
-            this.bttnAramaBul = new System.Windows.Forms.Button();
-            this.txtbArama = new System.Windows.Forms.TextBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -70,18 +67,21 @@
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.txtbArama = new System.Windows.Forms.TextBox();
+            this.bttnAramaTemizle = new System.Windows.Forms.Button();
+            this.bttnAramaBul = new System.Windows.Forms.Button();
             this.pctrbxGeri = new System.Windows.Forms.PictureBox();
-            this.pctrbxAnasayfa = new System.Windows.Forms.PictureBox();
+            this.pctrbxSayfayiKapat = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxAnasayfa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxSayfayiKapat)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 31);
+            this.label1.Location = new System.Drawing.Point(167, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 1;
@@ -90,7 +90,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(36, 63);
+            this.label2.Location = new System.Drawing.Point(167, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(20, 13);
             this.label2.TabIndex = 3;
@@ -99,7 +99,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(36, 98);
+            this.label3.Location = new System.Drawing.Point(167, 103);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 5;
@@ -108,7 +108,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(36, 131);
+            this.label4.Location = new System.Drawing.Point(167, 136);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 13);
             this.label4.TabIndex = 7;
@@ -117,7 +117,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(258, 63);
+            this.label5.Location = new System.Drawing.Point(389, 68);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(36, 13);
             this.label5.TabIndex = 9;
@@ -126,7 +126,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(258, 31);
+            this.label6.Location = new System.Drawing.Point(389, 36);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 13);
             this.label6.TabIndex = 11;
@@ -135,7 +135,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(258, 98);
+            this.label7.Location = new System.Drawing.Point(389, 103);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(34, 13);
             this.label7.TabIndex = 13;
@@ -143,35 +143,35 @@
             // 
             // txtbTcKimlik
             // 
-            this.txtbTcKimlik.Location = new System.Drawing.Point(103, 28);
+            this.txtbTcKimlik.Location = new System.Drawing.Point(234, 33);
             this.txtbTcKimlik.Name = "txtbTcKimlik";
             this.txtbTcKimlik.Size = new System.Drawing.Size(100, 20);
             this.txtbTcKimlik.TabIndex = 15;
             // 
             // txtbAd
             // 
-            this.txtbAd.Location = new System.Drawing.Point(103, 60);
+            this.txtbAd.Location = new System.Drawing.Point(234, 65);
             this.txtbAd.Name = "txtbAd";
             this.txtbAd.Size = new System.Drawing.Size(100, 20);
             this.txtbAd.TabIndex = 17;
             // 
             // txtbSoyad
             // 
-            this.txtbSoyad.Location = new System.Drawing.Point(103, 95);
+            this.txtbSoyad.Location = new System.Drawing.Point(234, 100);
             this.txtbSoyad.Name = "txtbSoyad";
             this.txtbSoyad.Size = new System.Drawing.Size(100, 20);
             this.txtbSoyad.TabIndex = 19;
             // 
             // txtbTelefonNo
             // 
-            this.txtbTelefonNo.Location = new System.Drawing.Point(325, 28);
+            this.txtbTelefonNo.Location = new System.Drawing.Point(456, 33);
             this.txtbTelefonNo.Name = "txtbTelefonNo";
             this.txtbTelefonNo.Size = new System.Drawing.Size(100, 20);
             this.txtbTelefonNo.TabIndex = 21;
             // 
             // txtbEMail
             // 
-            this.txtbEMail.Location = new System.Drawing.Point(325, 60);
+            this.txtbEMail.Location = new System.Drawing.Point(456, 65);
             this.txtbEMail.Name = "txtbEMail";
             this.txtbEMail.Size = new System.Drawing.Size(100, 20);
             this.txtbEMail.TabIndex = 23;
@@ -179,7 +179,7 @@
             // rdbttnKadin
             // 
             this.rdbttnKadin.AutoSize = true;
-            this.rdbttnKadin.Location = new System.Drawing.Point(103, 131);
+            this.rdbttnKadin.Location = new System.Drawing.Point(234, 136);
             this.rdbttnKadin.Name = "rdbttnKadin";
             this.rdbttnKadin.Size = new System.Drawing.Size(32, 17);
             this.rdbttnKadin.TabIndex = 24;
@@ -190,7 +190,7 @@
             // rdbttnErkek
             // 
             this.rdbttnErkek.AutoSize = true;
-            this.rdbttnErkek.Location = new System.Drawing.Point(167, 131);
+            this.rdbttnErkek.Location = new System.Drawing.Point(298, 136);
             this.rdbttnErkek.Name = "rdbttnErkek";
             this.rdbttnErkek.Size = new System.Drawing.Size(32, 17);
             this.rdbttnErkek.TabIndex = 25;
@@ -210,7 +210,7 @@
             this.panel1.Controls.Add(this.txtbCadde);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Location = new System.Drawing.Point(325, 98);
+            this.panel1.Location = new System.Drawing.Point(456, 103);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(161, 142);
             this.panel1.TabIndex = 26;
@@ -297,7 +297,7 @@
             // 
             // bttnTemizle
             // 
-            this.bttnTemizle.Location = new System.Drawing.Point(124, 158);
+            this.bttnTemizle.Location = new System.Drawing.Point(255, 163);
             this.bttnTemizle.Name = "bttnTemizle";
             this.bttnTemizle.Size = new System.Drawing.Size(75, 23);
             this.bttnTemizle.TabIndex = 27;
@@ -306,7 +306,7 @@
             // 
             // bttnKaydet
             // 
-            this.bttnKaydet.Location = new System.Drawing.Point(30, 199);
+            this.bttnKaydet.Location = new System.Drawing.Point(161, 204);
             this.bttnKaydet.Name = "bttnKaydet";
             this.bttnKaydet.Size = new System.Drawing.Size(75, 23);
             this.bttnKaydet.TabIndex = 28;
@@ -315,7 +315,7 @@
             // 
             // bttnKaydiSil
             // 
-            this.bttnKaydiSil.Location = new System.Drawing.Point(128, 199);
+            this.bttnKaydiSil.Location = new System.Drawing.Point(259, 204);
             this.bttnKaydiSil.Name = "bttnKaydiSil";
             this.bttnKaydiSil.Size = new System.Drawing.Size(75, 23);
             this.bttnKaydiSil.TabIndex = 29;
@@ -324,7 +324,7 @@
             // 
             // bttnKaydiGuncelle
             // 
-            this.bttnKaydiGuncelle.Location = new System.Drawing.Point(219, 199);
+            this.bttnKaydiGuncelle.Location = new System.Drawing.Point(350, 204);
             this.bttnKaydiGuncelle.Name = "bttnKaydiGuncelle";
             this.bttnKaydiGuncelle.Size = new System.Drawing.Size(75, 23);
             this.bttnKaydiGuncelle.TabIndex = 30;
@@ -337,37 +337,12 @@
             this.groupBox1.Controls.Add(this.txtbArama);
             this.groupBox1.Controls.Add(this.bttnAramaTemizle);
             this.groupBox1.Controls.Add(this.bttnAramaBul);
-            this.groupBox1.Location = new System.Drawing.Point(2, 246);
+            this.groupBox1.Location = new System.Drawing.Point(40, 251);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(484, 111);
+            this.groupBox1.Size = new System.Drawing.Size(693, 187);
             this.groupBox1.TabIndex = 31;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Personel Listesi";
-            // 
-            // bttnAramaTemizle
-            // 
-            this.bttnAramaTemizle.Location = new System.Drawing.Point(284, 19);
-            this.bttnAramaTemizle.Name = "bttnAramaTemizle";
-            this.bttnAramaTemizle.Size = new System.Drawing.Size(75, 23);
-            this.bttnAramaTemizle.TabIndex = 30;
-            this.bttnAramaTemizle.Text = "Temizle";
-            this.bttnAramaTemizle.UseVisualStyleBackColor = true;
-            // 
-            // bttnAramaBul
-            // 
-            this.bttnAramaBul.Location = new System.Drawing.Point(194, 19);
-            this.bttnAramaBul.Name = "bttnAramaBul";
-            this.bttnAramaBul.Size = new System.Drawing.Size(75, 23);
-            this.bttnAramaBul.TabIndex = 29;
-            this.bttnAramaBul.Text = "Bul";
-            this.bttnAramaBul.UseVisualStyleBackColor = true;
-            // 
-            // txtbArama
-            // 
-            this.txtbArama.Location = new System.Drawing.Point(13, 21);
-            this.txtbArama.Name = "txtbArama";
-            this.txtbArama.Size = new System.Drawing.Size(164, 20);
-            this.txtbArama.TabIndex = 39;
             // 
             // listView1
             // 
@@ -380,9 +355,9 @@
             this.columnHeader6,
             this.columnHeader7});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 41);
+            this.listView1.Location = new System.Drawing.Point(0, 47);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(484, 70);
+            this.listView1.Size = new System.Drawing.Size(693, 134);
             this.listView1.TabIndex = 40;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -415,6 +390,31 @@
             // 
             this.columnHeader7.Text = "Adres";
             // 
+            // txtbArama
+            // 
+            this.txtbArama.Location = new System.Drawing.Point(13, 21);
+            this.txtbArama.Name = "txtbArama";
+            this.txtbArama.Size = new System.Drawing.Size(239, 20);
+            this.txtbArama.TabIndex = 39;
+            // 
+            // bttnAramaTemizle
+            // 
+            this.bttnAramaTemizle.Location = new System.Drawing.Point(394, 19);
+            this.bttnAramaTemizle.Name = "bttnAramaTemizle";
+            this.bttnAramaTemizle.Size = new System.Drawing.Size(75, 23);
+            this.bttnAramaTemizle.TabIndex = 30;
+            this.bttnAramaTemizle.Text = "Temizle";
+            this.bttnAramaTemizle.UseVisualStyleBackColor = true;
+            // 
+            // bttnAramaBul
+            // 
+            this.bttnAramaBul.Location = new System.Drawing.Point(308, 19);
+            this.bttnAramaBul.Name = "bttnAramaBul";
+            this.bttnAramaBul.Size = new System.Drawing.Size(75, 23);
+            this.bttnAramaBul.TabIndex = 29;
+            this.bttnAramaBul.Text = "Bul";
+            this.bttnAramaBul.UseVisualStyleBackColor = true;
+            // 
             // pctrbxGeri
             // 
             this.pctrbxGeri.BackColor = System.Drawing.Color.Transparent;
@@ -426,23 +426,23 @@
             this.pctrbxGeri.TabIndex = 32;
             this.pctrbxGeri.TabStop = false;
             // 
-            // pctrbxAnasayfa
+            // pctrbxSayfayiKapat
             // 
-            this.pctrbxAnasayfa.BackColor = System.Drawing.Color.Transparent;
-            this.pctrbxAnasayfa.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxAnasayfa.Image")));
-            this.pctrbxAnasayfa.Location = new System.Drawing.Point(451, 12);
-            this.pctrbxAnasayfa.Name = "pctrbxAnasayfa";
-            this.pctrbxAnasayfa.Size = new System.Drawing.Size(24, 22);
-            this.pctrbxAnasayfa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctrbxAnasayfa.TabIndex = 33;
-            this.pctrbxAnasayfa.TabStop = false;
+            this.pctrbxSayfayiKapat.BackColor = System.Drawing.Color.Transparent;
+            this.pctrbxSayfayiKapat.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxSayfayiKapat.Image")));
+            this.pctrbxSayfayiKapat.Location = new System.Drawing.Point(736, 12);
+            this.pctrbxSayfayiKapat.Name = "pctrbxSayfayiKapat";
+            this.pctrbxSayfayiKapat.Size = new System.Drawing.Size(24, 22);
+            this.pctrbxSayfayiKapat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctrbxSayfayiKapat.TabIndex = 33;
+            this.pctrbxSayfayiKapat.TabStop = false;
             // 
-            // Form1
+            // PersonRecording
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(487, 359);
-            this.Controls.Add(this.pctrbxAnasayfa);
+            this.ClientSize = new System.Drawing.Size(772, 450);
+            this.Controls.Add(this.pctrbxSayfayiKapat);
             this.Controls.Add(this.pctrbxGeri);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.bttnKaydiGuncelle);
@@ -465,14 +465,14 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "PersonRecording";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxAnasayfa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxSayfayiKapat)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -522,7 +522,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.PictureBox pctrbxGeri;
-        private System.Windows.Forms.PictureBox pctrbxAnasayfa;
+        private System.Windows.Forms.PictureBox pctrbxSayfayiKapat;
     }
 }
 

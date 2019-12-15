@@ -35,15 +35,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtbTcKimlik = new System.Windows.Forms.TextBox();
             this.txtbKitapKodu = new System.Windows.Forms.TextBox();
-            this.txtbAlimTarihi = new System.Windows.Forms.TextBox();
-            this.txtbTeslimTarihi = new System.Windows.Forms.TextBox();
             this.bttnKaydet = new System.Windows.Forms.Button();
             this.bttnIptal = new System.Windows.Forms.Button();
             this.pctrbxGeri = new System.Windows.Forms.PictureBox();
-            this.pctrbxAnasayfa = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.pctrbxSayfayiKapat = new System.Windows.Forms.PictureBox();
+            this.dateTeslimTarihi = new System.Windows.Forms.DateTimePicker();
+            this.dateAlımTarihi = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxAnasayfa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxSayfayiKapat)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -104,20 +103,6 @@
             this.txtbKitapKodu.TabIndex = 5;
             this.txtbKitapKodu.TextChanged += new System.EventHandler(this.txtbKitapKodu_TextChanged);
             // 
-            // txtbAlimTarihi
-            // 
-            this.txtbAlimTarihi.Location = new System.Drawing.Point(450, 134);
-            this.txtbAlimTarihi.Name = "txtbAlimTarihi";
-            this.txtbAlimTarihi.Size = new System.Drawing.Size(100, 20);
-            this.txtbAlimTarihi.TabIndex = 6;
-            // 
-            // txtbTeslimTarihi
-            // 
-            this.txtbTeslimTarihi.Location = new System.Drawing.Point(450, 173);
-            this.txtbTeslimTarihi.Name = "txtbTeslimTarihi";
-            this.txtbTeslimTarihi.Size = new System.Drawing.Size(100, 20);
-            this.txtbTeslimTarihi.TabIndex = 7;
-            // 
             // bttnKaydet
             // 
             this.bttnKaydet.Location = new System.Drawing.Point(262, 255);
@@ -147,49 +132,56 @@
             this.pctrbxGeri.TabIndex = 10;
             this.pctrbxGeri.TabStop = false;
             // 
-            // pctrbxAnasayfa
+            // pctrbxSayfayiKapat
             // 
-            this.pctrbxAnasayfa.BackColor = System.Drawing.Color.Transparent;
-            this.pctrbxAnasayfa.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxAnasayfa.Image")));
-            this.pctrbxAnasayfa.Location = new System.Drawing.Point(715, 12);
-            this.pctrbxAnasayfa.Name = "pctrbxAnasayfa";
-            this.pctrbxAnasayfa.Size = new System.Drawing.Size(29, 30);
-            this.pctrbxAnasayfa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctrbxAnasayfa.TabIndex = 11;
-            this.pctrbxAnasayfa.TabStop = false;
+            this.pctrbxSayfayiKapat.BackColor = System.Drawing.Color.Transparent;
+            this.pctrbxSayfayiKapat.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxSayfayiKapat.Image")));
+            this.pctrbxSayfayiKapat.Location = new System.Drawing.Point(715, 12);
+            this.pctrbxSayfayiKapat.Name = "pctrbxSayfayiKapat";
+            this.pctrbxSayfayiKapat.Size = new System.Drawing.Size(29, 30);
+            this.pctrbxSayfayiKapat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctrbxSayfayiKapat.TabIndex = 11;
+            this.pctrbxSayfayiKapat.TabStop = false;
             // 
-            // dateTimePicker1
+            // dateTeslimTarihi
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(401, 75);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(158, 20);
-            this.dateTimePicker1.TabIndex = 12;
+            this.dateTeslimTarihi.Location = new System.Drawing.Point(462, 176);
+            this.dateTeslimTarihi.Name = "dateTeslimTarihi";
+            this.dateTeslimTarihi.Size = new System.Drawing.Size(200, 20);
+            this.dateTeslimTarihi.TabIndex = 13;
             // 
-            // Form1
+            // dateAlımTarihi
+            // 
+            this.dateAlımTarihi.Location = new System.Drawing.Point(462, 135);
+            this.dateAlımTarihi.Name = "dateAlımTarihi";
+            this.dateAlımTarihi.Size = new System.Drawing.Size(200, 20);
+            this.dateAlımTarihi.TabIndex = 14;
+            // 
+            // BookLend
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(757, 382);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.pctrbxAnasayfa);
+            this.ClientSize = new System.Drawing.Size(772, 450);
+            this.Controls.Add(this.dateAlımTarihi);
+            this.Controls.Add(this.dateTeslimTarihi);
+            this.Controls.Add(this.pctrbxSayfayiKapat);
             this.Controls.Add(this.pctrbxGeri);
             this.Controls.Add(this.bttnIptal);
             this.Controls.Add(this.bttnKaydet);
-            this.Controls.Add(this.txtbTeslimTarihi);
-            this.Controls.Add(this.txtbAlimTarihi);
             this.Controls.Add(this.txtbKitapKodu);
             this.Controls.Add(this.txtbTcKimlik);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "BookLend";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxAnasayfa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxSayfayiKapat)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,13 +195,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtbTcKimlik;
         private System.Windows.Forms.TextBox txtbKitapKodu;
-        private System.Windows.Forms.TextBox txtbAlimTarihi;
-        private System.Windows.Forms.TextBox txtbTeslimTarihi;
         private System.Windows.Forms.Button bttnKaydet;
         private System.Windows.Forms.Button bttnIptal;
         private System.Windows.Forms.PictureBox pctrbxGeri;
-        private System.Windows.Forms.PictureBox pctrbxAnasayfa;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.PictureBox pctrbxSayfayiKapat;
+        private System.Windows.Forms.DateTimePicker dateTeslimTarihi;
+        private System.Windows.Forms.DateTimePicker dateAlımTarihi;
     }
 }
 
