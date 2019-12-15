@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtbeposta = new System.Windows.Forms.TextBox();
-            this.txtbsifre = new System.Windows.Forms.TextBox();
-            this.btngiris = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btngiris = new System.Windows.Forms.Button();
+            this.txtbsifre = new System.Windows.Forms.TextBox();
+            this.txtbeposta = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,32 +58,49 @@
             this.panel1.Size = new System.Drawing.Size(273, 279);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // linkLabel1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(67, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 40);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Giriş Yap";
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel1.Location = new System.Drawing.Point(182, 234);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(32, 14);
+            this.linkLabel1.TabIndex = 6;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "kayıt";
             // 
-            // txtbeposta
+            // label4
             // 
-            this.txtbeposta.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtbeposta.Location = new System.Drawing.Point(47, 89);
-            this.txtbeposta.Name = "txtbeposta";
-            this.txtbeposta.Size = new System.Drawing.Size(174, 27);
-            this.txtbeposta.TabIndex = 1;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(42, 234);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(195, 14);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Hesabın yok mu ? Hemen           ol !";
             // 
-            // txtbsifre
+            // label3
             // 
-            this.txtbsifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtbsifre.Location = new System.Drawing.Point(47, 147);
-            this.txtbsifre.Name = "txtbsifre";
-            this.txtbsifre.Size = new System.Drawing.Size(174, 27);
-            this.txtbsifre.TabIndex = 2;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(51, 131);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(36, 14);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "ŞİFRE";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(50, 72);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(49, 14);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "E-POSTA";
             // 
             // btngiris
             // 
@@ -98,49 +115,32 @@
             this.btngiris.Text = "GİRİŞ";
             this.btngiris.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // txtbsifre
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(50, 72);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 14);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "E-POSTA";
+            this.txtbsifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtbsifre.Location = new System.Drawing.Point(47, 147);
+            this.txtbsifre.Name = "txtbsifre";
+            this.txtbsifre.Size = new System.Drawing.Size(174, 27);
+            this.txtbsifre.TabIndex = 2;
             // 
-            // label3
+            // txtbeposta
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(51, 131);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 14);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "ŞİFRE";
+            this.txtbeposta.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtbeposta.Location = new System.Drawing.Point(47, 89);
+            this.txtbeposta.Name = "txtbeposta";
+            this.txtbeposta.Size = new System.Drawing.Size(174, 27);
+            this.txtbeposta.TabIndex = 1;
             // 
-            // label4
+            // label1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(42, 234);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(195, 14);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Hesabın yok mu ? Hemen           ol !";
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(182, 234);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(32, 14);
-            this.linkLabel1.TabIndex = 6;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "kayıt";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(67, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(135, 40);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Giriş Yap";
             // 
             // Login
             // 
