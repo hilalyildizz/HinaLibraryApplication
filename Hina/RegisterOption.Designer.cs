@@ -29,32 +29,56 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterOption));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.bttnPersonel = new System.Windows.Forms.Button();
+            this.bttnKullanici = new System.Windows.Forms.Button();
+            this.pctrbxGeri = new System.Windows.Forms.PictureBox();
+            this.pctrbxAnasayfa = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxAnasayfa)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // bttnPersonel
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(244, 186);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 35);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Personel";
-            this.button1.UseVisualStyleBackColor = false;
+            this.bttnPersonel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.bttnPersonel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnPersonel.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bttnPersonel.ForeColor = System.Drawing.Color.Black;
+            this.bttnPersonel.Location = new System.Drawing.Point(139, 172);
+            this.bttnPersonel.Name = "bttnPersonel";
+            this.bttnPersonel.Size = new System.Drawing.Size(91, 35);
+            this.bttnPersonel.TabIndex = 0;
+            this.bttnPersonel.Text = "Personel";
+            this.bttnPersonel.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // bttnKullanici
             // 
-            this.button2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(407, 186);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(89, 35);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Kullanıcı";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bttnKullanici.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bttnKullanici.Location = new System.Drawing.Point(302, 172);
+            this.bttnKullanici.Name = "bttnKullanici";
+            this.bttnKullanici.Size = new System.Drawing.Size(89, 35);
+            this.bttnKullanici.TabIndex = 1;
+            this.bttnKullanici.Text = "Kullanıcı";
+            this.bttnKullanici.UseVisualStyleBackColor = true;
+            // 
+            // pctrbxGeri
+            // 
+            this.pctrbxGeri.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxGeri.Image")));
+            this.pctrbxGeri.Location = new System.Drawing.Point(12, 12);
+            this.pctrbxGeri.Name = "pctrbxGeri";
+            this.pctrbxGeri.Size = new System.Drawing.Size(24, 25);
+            this.pctrbxGeri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctrbxGeri.TabIndex = 2;
+            this.pctrbxGeri.TabStop = false;
+            // 
+            // pctrbxAnasayfa
+            // 
+            this.pctrbxAnasayfa.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxAnasayfa.Image")));
+            this.pctrbxAnasayfa.Location = new System.Drawing.Point(476, 12);
+            this.pctrbxAnasayfa.Name = "pctrbxAnasayfa";
+            this.pctrbxAnasayfa.Size = new System.Drawing.Size(28, 25);
+            this.pctrbxAnasayfa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctrbxAnasayfa.TabIndex = 3;
+            this.pctrbxAnasayfa.TabStop = false;
             // 
             // RegisterOption
             // 
@@ -62,19 +86,25 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(756, 411);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(530, 372);
+            this.Controls.Add(this.pctrbxAnasayfa);
+            this.Controls.Add(this.pctrbxGeri);
+            this.Controls.Add(this.bttnKullanici);
+            this.Controls.Add(this.bttnPersonel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegisterOption";
             this.Text = "RegisterOption";
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxAnasayfa)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button bttnPersonel;
+        private System.Windows.Forms.Button bttnKullanici;
+        private System.Windows.Forms.PictureBox pctrbxGeri;
+        private System.Windows.Forms.PictureBox pctrbxAnasayfa;
     }
 }
