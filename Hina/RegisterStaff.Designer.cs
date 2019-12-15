@@ -28,90 +28,90 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.bttnKitapIslemleri = new System.Windows.Forms.Button();
+            this.bttnUyeIslemleri = new System.Windows.Forms.Button();
+            this.bttnGecikmisKitaplar = new System.Windows.Forms.Button();
+            this.bttnAyarlar = new System.Windows.Forms.Button();
+            this.bttnEmanetIslemleri = new System.Windows.Forms.Button();
+            this.bttnHakkinda = new System.Windows.Forms.Button();
+            this.bttnCikis = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // bttnKitapIslemleri
             // 
-            this.button1.Location = new System.Drawing.Point(119, 55);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 44);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Kitap İşlemleri";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bttnKitapIslemleri.Location = new System.Drawing.Point(119, 55);
+            this.bttnKitapIslemleri.Name = "bttnKitapIslemleri";
+            this.bttnKitapIslemleri.Size = new System.Drawing.Size(75, 44);
+            this.bttnKitapIslemleri.TabIndex = 0;
+            this.bttnKitapIslemleri.Text = "Kitap İşlemleri";
+            this.bttnKitapIslemleri.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // bttnUyeIslemleri
             // 
-            this.button2.Location = new System.Drawing.Point(321, 55);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 44);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Üye İşlemleri";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bttnUyeIslemleri.Location = new System.Drawing.Point(321, 55);
+            this.bttnUyeIslemleri.Name = "bttnUyeIslemleri";
+            this.bttnUyeIslemleri.Size = new System.Drawing.Size(75, 44);
+            this.bttnUyeIslemleri.TabIndex = 1;
+            this.bttnUyeIslemleri.Text = "Üye İşlemleri";
+            this.bttnUyeIslemleri.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // bttnGecikmisKitaplar
             // 
-            this.button3.Location = new System.Drawing.Point(529, 55);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 44);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Gecikmiş Kitaplar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.bttnGecikmisKitaplar.Location = new System.Drawing.Point(529, 55);
+            this.bttnGecikmisKitaplar.Name = "bttnGecikmisKitaplar";
+            this.bttnGecikmisKitaplar.Size = new System.Drawing.Size(75, 44);
+            this.bttnGecikmisKitaplar.TabIndex = 2;
+            this.bttnGecikmisKitaplar.Text = "Gecikmiş Kitaplar";
+            this.bttnGecikmisKitaplar.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // bttnAyarlar
             // 
-            this.button4.Location = new System.Drawing.Point(119, 196);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 46);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Ayarlar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.bttnAyarlar.Location = new System.Drawing.Point(119, 196);
+            this.bttnAyarlar.Name = "bttnAyarlar";
+            this.bttnAyarlar.Size = new System.Drawing.Size(75, 46);
+            this.bttnAyarlar.TabIndex = 3;
+            this.bttnAyarlar.Text = "Ayarlar";
+            this.bttnAyarlar.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // bttnEmanetIslemleri
             // 
-            this.button5.Location = new System.Drawing.Point(321, 196);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 46);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Emanet İşlemleri";
-            this.button5.UseVisualStyleBackColor = true;
+            this.bttnEmanetIslemleri.Location = new System.Drawing.Point(321, 196);
+            this.bttnEmanetIslemleri.Name = "bttnEmanetIslemleri";
+            this.bttnEmanetIslemleri.Size = new System.Drawing.Size(75, 46);
+            this.bttnEmanetIslemleri.TabIndex = 4;
+            this.bttnEmanetIslemleri.Text = "Emanet İşlemleri";
+            this.bttnEmanetIslemleri.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // bttnHakkinda
             // 
-            this.button6.Location = new System.Drawing.Point(529, 196);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 46);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Hakkında";
-            this.button6.UseVisualStyleBackColor = true;
+            this.bttnHakkinda.Location = new System.Drawing.Point(529, 196);
+            this.bttnHakkinda.Name = "bttnHakkinda";
+            this.bttnHakkinda.Size = new System.Drawing.Size(75, 46);
+            this.bttnHakkinda.TabIndex = 5;
+            this.bttnHakkinda.Text = "Hakkında";
+            this.bttnHakkinda.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // bttnCikis
             // 
-            this.button7.Location = new System.Drawing.Point(321, 305);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 45);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Çıkış";
-            this.button7.UseVisualStyleBackColor = true;
+            this.bttnCikis.Location = new System.Drawing.Point(321, 305);
+            this.bttnCikis.Name = "bttnCikis";
+            this.bttnCikis.Size = new System.Drawing.Size(75, 45);
+            this.bttnCikis.TabIndex = 6;
+            this.bttnCikis.Text = "Çıkış";
+            this.bttnCikis.UseVisualStyleBackColor = true;
             // 
             // RegisterStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(726, 450);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bttnCikis);
+            this.Controls.Add(this.bttnHakkinda);
+            this.Controls.Add(this.bttnEmanetIslemleri);
+            this.Controls.Add(this.bttnAyarlar);
+            this.Controls.Add(this.bttnGecikmisKitaplar);
+            this.Controls.Add(this.bttnUyeIslemleri);
+            this.Controls.Add(this.bttnKitapIslemleri);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegisterStaff";
             this.Text = "RegisterStaff";
@@ -121,12 +121,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button bttnKitapIslemleri;
+        private System.Windows.Forms.Button bttnUyeIslemleri;
+        private System.Windows.Forms.Button bttnGecikmisKitaplar;
+        private System.Windows.Forms.Button bttnAyarlar;
+        private System.Windows.Forms.Button bttnEmanetIslemleri;
+        private System.Windows.Forms.Button bttnHakkinda;
+        private System.Windows.Forms.Button bttnCikis;
     }
 }
