@@ -153,6 +153,12 @@
     <Compile Include="sp_helpdiagrams_Result.cs">
       <DependentUpon>HinaDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="StaffHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffHome.designer.cs">
+      <DependentUpon>StaffHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>HinaDB.tt</DependentUpon>
     </Compile>
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegisterStaff.resx">
       <DependentUpon>RegisterStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffHome.resx">
+      <DependentUpon>StaffHome.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="HinaDB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
