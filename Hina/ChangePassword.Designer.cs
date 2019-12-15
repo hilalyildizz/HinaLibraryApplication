@@ -28,24 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txtbEMaİL = new System.Windows.Forms.TextBox();
+            this.txtbEskiSifre = new System.Windows.Forms.TextBox();
+            this.txtbYeniSifre = new System.Windows.Forms.TextBox();
+            this.txtbYeniSifreTekrar = new System.Windows.Forms.TextBox();
+            this.txtbSifreHatirlatici = new System.Windows.Forms.TextBox();
+            this.bttnKaydet = new System.Windows.Forms.Button();
+            this.bttnGeri = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(116, 36);
+            this.label1.Location = new System.Drawing.Point(114, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(36, 13);
             this.label1.TabIndex = 0;
@@ -54,7 +59,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(116, 69);
+            this.label2.Location = new System.Drawing.Point(114, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 13);
             this.label2.TabIndex = 1;
@@ -63,7 +68,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(116, 103);
+            this.label3.Location = new System.Drawing.Point(114, 134);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 2;
@@ -72,7 +77,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(116, 139);
+            this.label4.Location = new System.Drawing.Point(114, 170);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 13);
             this.label4.TabIndex = 3;
@@ -81,77 +86,99 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(116, 174);
+            this.label5.Location = new System.Drawing.Point(114, 205);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Şifre Hatırlatıcı";
             // 
-            // textBox1
+            // txtbEMaİL
             // 
-            this.textBox1.Location = new System.Drawing.Point(206, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtbEMaİL.Location = new System.Drawing.Point(204, 67);
+            this.txtbEMaİL.Name = "txtbEMaİL";
+            this.txtbEMaİL.Size = new System.Drawing.Size(100, 20);
+            this.txtbEMaİL.TabIndex = 5;
             // 
-            // textBox2
+            // txtbEskiSifre
             // 
-            this.textBox2.Location = new System.Drawing.Point(206, 69);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
+            this.txtbEskiSifre.Location = new System.Drawing.Point(204, 100);
+            this.txtbEskiSifre.Name = "txtbEskiSifre";
+            this.txtbEskiSifre.Size = new System.Drawing.Size(100, 20);
+            this.txtbEskiSifre.TabIndex = 6;
             // 
-            // textBox3
+            // txtbYeniSifre
             // 
-            this.textBox3.Location = new System.Drawing.Point(206, 103);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 7;
+            this.txtbYeniSifre.Location = new System.Drawing.Point(204, 134);
+            this.txtbYeniSifre.Name = "txtbYeniSifre";
+            this.txtbYeniSifre.Size = new System.Drawing.Size(100, 20);
+            this.txtbYeniSifre.TabIndex = 7;
             // 
-            // textBox4
+            // txtbYeniSifreTekrar
             // 
-            this.textBox4.Location = new System.Drawing.Point(206, 139);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 8;
+            this.txtbYeniSifreTekrar.Location = new System.Drawing.Point(204, 170);
+            this.txtbYeniSifreTekrar.Name = "txtbYeniSifreTekrar";
+            this.txtbYeniSifreTekrar.Size = new System.Drawing.Size(100, 20);
+            this.txtbYeniSifreTekrar.TabIndex = 8;
             // 
-            // textBox5
+            // txtbSifreHatirlatici
             // 
-            this.textBox5.Location = new System.Drawing.Point(206, 166);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 9;
+            this.txtbSifreHatirlatici.Location = new System.Drawing.Point(204, 197);
+            this.txtbSifreHatirlatici.Name = "txtbSifreHatirlatici";
+            this.txtbSifreHatirlatici.Size = new System.Drawing.Size(100, 20);
+            this.txtbSifreHatirlatici.TabIndex = 9;
             // 
-            // button1
+            // bttnKaydet
             // 
-            this.button1.Location = new System.Drawing.Point(107, 231);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Kaydet";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bttnKaydet.Location = new System.Drawing.Point(105, 262);
+            this.bttnKaydet.Name = "bttnKaydet";
+            this.bttnKaydet.Size = new System.Drawing.Size(75, 23);
+            this.bttnKaydet.TabIndex = 10;
+            this.bttnKaydet.Text = "Kaydet";
+            this.bttnKaydet.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // bttnGeri
             // 
-            this.button2.Location = new System.Drawing.Point(231, 231);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Geri";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bttnGeri.Location = new System.Drawing.Point(229, 262);
+            this.bttnGeri.Name = "bttnGeri";
+            this.bttnGeri.Size = new System.Drawing.Size(75, 23);
+            this.bttnGeri.TabIndex = 11;
+            this.bttnGeri.Text = "Geri";
+            this.bttnGeri.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(24, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(23, 26);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(379, 13);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(28, 26);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 13;
+            this.pictureBox2.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(419, 360);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.bttnGeri);
+            this.Controls.Add(this.bttnKaydet);
+            this.Controls.Add(this.txtbSifreHatirlatici);
+            this.Controls.Add(this.txtbYeniSifreTekrar);
+            this.Controls.Add(this.txtbYeniSifre);
+            this.Controls.Add(this.txtbEskiSifre);
+            this.Controls.Add(this.txtbEMaİL);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -159,6 +186,8 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,13 +200,15 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtbEMaİL;
+        private System.Windows.Forms.TextBox txtbEskiSifre;
+        private System.Windows.Forms.TextBox txtbYeniSifre;
+        private System.Windows.Forms.TextBox txtbYeniSifreTekrar;
+        private System.Windows.Forms.TextBox txtbSifreHatirlatici;
+        private System.Windows.Forms.Button bttnKaydet;
+        private System.Windows.Forms.Button bttnGeri;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
