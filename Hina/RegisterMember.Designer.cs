@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterMember));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -36,32 +37,36 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtbTcKimlik = new System.Windows.Forms.TextBox();
+            this.txtbAd = new System.Windows.Forms.TextBox();
+            this.txtbSoyad = new System.Windows.Forms.TextBox();
+            this.txtbEPosta = new System.Windows.Forms.TextBox();
+            this.txtbSifre = new System.Windows.Forms.TextBox();
+            this.rdbttnKadin = new System.Windows.Forms.RadioButton();
+            this.rdbttnErkek = new System.Windows.Forms.RadioButton();
+            this.bttnKayitOl = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.cmbbxİlçe = new System.Windows.Forms.ComboBox();
+            this.cmbbxİl = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.txtbDaireAdi = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtbDaireNo = new System.Windows.Forms.TextBox();
+            this.txtbNo = new System.Windows.Forms.TextBox();
+            this.txtbSokak = new System.Windows.Forms.TextBox();
+            this.txtbMahalle = new System.Windows.Forms.TextBox();
+            this.txtbCadde = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pctrbxGeri = new System.Windows.Forms.PictureBox();
+            this.pctrbxAnasayfa = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxAnasayfa)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -77,7 +82,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(121, 61);
+            this.label2.Location = new System.Drawing.Point(91, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 2;
@@ -86,7 +91,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(121, 80);
+            this.label3.Location = new System.Drawing.Point(91, 77);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(20, 13);
             this.label3.TabIndex = 4;
@@ -95,7 +100,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(121, 105);
+            this.label4.Location = new System.Drawing.Point(91, 102);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 6;
@@ -104,7 +109,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(121, 129);
+            this.label5.Location = new System.Drawing.Point(91, 126);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 13);
             this.label5.TabIndex = 8;
@@ -113,7 +118,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(124, 151);
+            this.label6.Location = new System.Drawing.Point(94, 148);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(34, 13);
             this.label6.TabIndex = 10;
@@ -122,7 +127,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(124, 292);
+            this.label7.Location = new System.Drawing.Point(94, 289);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(44, 13);
             this.label7.TabIndex = 12;
@@ -131,205 +136,116 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(124, 315);
+            this.label8.Location = new System.Drawing.Point(94, 312);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(28, 13);
             this.label8.TabIndex = 14;
             this.label8.Text = "Şifre";
             // 
-            // textBox1
+            // txtbTcKimlik
             // 
-            this.textBox1.Location = new System.Drawing.Point(222, 54);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 15;
+            this.txtbTcKimlik.Location = new System.Drawing.Point(192, 51);
+            this.txtbTcKimlik.Name = "txtbTcKimlik";
+            this.txtbTcKimlik.Size = new System.Drawing.Size(100, 20);
+            this.txtbTcKimlik.TabIndex = 15;
             // 
-            // textBox2
+            // txtbAd
             // 
-            this.textBox2.Location = new System.Drawing.Point(222, 77);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 16;
+            this.txtbAd.Location = new System.Drawing.Point(192, 74);
+            this.txtbAd.Name = "txtbAd";
+            this.txtbAd.Size = new System.Drawing.Size(100, 20);
+            this.txtbAd.TabIndex = 16;
             // 
-            // textBox3
+            // txtbSoyad
             // 
-            this.textBox3.Location = new System.Drawing.Point(222, 102);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 17;
+            this.txtbSoyad.Location = new System.Drawing.Point(192, 99);
+            this.txtbSoyad.Name = "txtbSoyad";
+            this.txtbSoyad.Size = new System.Drawing.Size(100, 20);
+            this.txtbSoyad.TabIndex = 17;
             // 
-            // textBox6
+            // txtbEPosta
             // 
-            this.textBox6.Location = new System.Drawing.Point(221, 289);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 20;
+            this.txtbEPosta.Location = new System.Drawing.Point(191, 286);
+            this.txtbEPosta.Name = "txtbEPosta";
+            this.txtbEPosta.Size = new System.Drawing.Size(100, 20);
+            this.txtbEPosta.TabIndex = 20;
             // 
-            // textBox7
+            // txtbSifre
             // 
-            this.textBox7.Location = new System.Drawing.Point(221, 312);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 21;
+            this.txtbSifre.Location = new System.Drawing.Point(191, 309);
+            this.txtbSifre.Name = "txtbSifre";
+            this.txtbSifre.Size = new System.Drawing.Size(100, 20);
+            this.txtbSifre.TabIndex = 21;
             // 
-            // radioButton1
+            // rdbttnKadin
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(223, 128);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(32, 17);
-            this.radioButton1.TabIndex = 22;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "K";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdbttnKadin.AutoSize = true;
+            this.rdbttnKadin.Location = new System.Drawing.Point(193, 125);
+            this.rdbttnKadin.Name = "rdbttnKadin";
+            this.rdbttnKadin.Size = new System.Drawing.Size(32, 17);
+            this.rdbttnKadin.TabIndex = 22;
+            this.rdbttnKadin.TabStop = true;
+            this.rdbttnKadin.Text = "K";
+            this.rdbttnKadin.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rdbttnErkek
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(269, 128);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(32, 17);
-            this.radioButton2.TabIndex = 23;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "E";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdbttnErkek.AutoSize = true;
+            this.rdbttnErkek.Location = new System.Drawing.Point(239, 125);
+            this.rdbttnErkek.Name = "rdbttnErkek";
+            this.rdbttnErkek.Size = new System.Drawing.Size(32, 17);
+            this.rdbttnErkek.TabIndex = 23;
+            this.rdbttnErkek.TabStop = true;
+            this.rdbttnErkek.Text = "E";
+            this.rdbttnErkek.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // bttnKayitOl
             // 
-            this.button1.Location = new System.Drawing.Point(247, 342);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Kayıt Ol";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bttnKayitOl.Location = new System.Drawing.Point(217, 339);
+            this.bttnKayitOl.Name = "bttnKayitOl";
+            this.bttnKayitOl.Size = new System.Drawing.Size(75, 23);
+            this.bttnKayitOl.TabIndex = 24;
+            this.bttnKayitOl.Text = "Kayıt Ol";
+            this.bttnKayitOl.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.cmbbxİlçe);
+            this.panel1.Controls.Add(this.cmbbxİl);
             this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.textBox13);
+            this.panel1.Controls.Add(this.txtbDaireAdi);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.textBox10);
-            this.panel1.Controls.Add(this.textBox9);
-            this.panel1.Controls.Add(this.textBox8);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.txtbDaireNo);
+            this.panel1.Controls.Add(this.txtbNo);
+            this.panel1.Controls.Add(this.txtbSokak);
+            this.panel1.Controls.Add(this.txtbMahalle);
+            this.panel1.Controls.Add(this.txtbCadde);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Location = new System.Drawing.Point(221, 151);
+            this.panel1.Location = new System.Drawing.Point(191, 148);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(336, 121);
             this.panel1.TabIndex = 25;
             // 
-            // label9
+            // cmbbxİlçe
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 14);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(38, 13);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Cadde";
+            this.cmbbxİlçe.FormattingEnabled = true;
+            this.cmbbxİlçe.Location = new System.Drawing.Point(212, 90);
+            this.cmbbxİlçe.Name = "cmbbxİlçe";
+            this.cmbbxİlçe.Size = new System.Drawing.Size(121, 21);
+            this.cmbbxİlçe.TabIndex = 17;
             // 
-            // label10
+            // cmbbxİl
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 40);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(44, 13);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Mahalle";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(173, 11);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(38, 13);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "Sokak";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(173, 40);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(21, 13);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "No";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(7, 96);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(46, 13);
-            this.label13.TabIndex = 4;
-            this.label13.Text = "DaireNo";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(67, 11);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 5;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(67, 37);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 6;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(212, 8);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 7;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(212, 37);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 8;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(67, 93);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 9;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(173, 70);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(12, 13);
-            this.label14.TabIndex = 10;
-            this.label14.Text = "İl";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(173, 96);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(24, 13);
-            this.label15.TabIndex = 11;
-            this.label15.Text = "İlçe";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(67, 67);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 20);
-            this.textBox13.TabIndex = 14;
+            this.cmbbxİl.FormattingEnabled = true;
+            this.cmbbxİl.Location = new System.Drawing.Point(212, 63);
+            this.cmbbxİl.Name = "cmbbxİl";
+            this.cmbbxİl.Size = new System.Drawing.Size(121, 21);
+            this.cmbbxİl.TabIndex = 16;
             // 
             // label16
             // 
@@ -340,36 +256,147 @@
             this.label16.TabIndex = 15;
             this.label16.Text = "DaireAdı";
             // 
-            // comboBox1
+            // txtbDaireAdi
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(212, 63);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 16;
+            this.txtbDaireAdi.Location = new System.Drawing.Point(67, 67);
+            this.txtbDaireAdi.Name = "txtbDaireAdi";
+            this.txtbDaireAdi.Size = new System.Drawing.Size(100, 20);
+            this.txtbDaireAdi.TabIndex = 14;
             // 
-            // comboBox2
+            // label15
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(212, 90);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 17;
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(173, 96);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(24, 13);
+            this.label15.TabIndex = 11;
+            this.label15.Text = "İlçe";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(173, 70);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(12, 13);
+            this.label14.TabIndex = 10;
+            this.label14.Text = "İl";
+            // 
+            // txtbDaireNo
+            // 
+            this.txtbDaireNo.Location = new System.Drawing.Point(67, 93);
+            this.txtbDaireNo.Name = "txtbDaireNo";
+            this.txtbDaireNo.Size = new System.Drawing.Size(100, 20);
+            this.txtbDaireNo.TabIndex = 9;
+            // 
+            // txtbNo
+            // 
+            this.txtbNo.Location = new System.Drawing.Point(212, 37);
+            this.txtbNo.Name = "txtbNo";
+            this.txtbNo.Size = new System.Drawing.Size(100, 20);
+            this.txtbNo.TabIndex = 8;
+            // 
+            // txtbSokak
+            // 
+            this.txtbSokak.Location = new System.Drawing.Point(212, 8);
+            this.txtbSokak.Name = "txtbSokak";
+            this.txtbSokak.Size = new System.Drawing.Size(100, 20);
+            this.txtbSokak.TabIndex = 7;
+            // 
+            // txtbMahalle
+            // 
+            this.txtbMahalle.Location = new System.Drawing.Point(67, 37);
+            this.txtbMahalle.Name = "txtbMahalle";
+            this.txtbMahalle.Size = new System.Drawing.Size(100, 20);
+            this.txtbMahalle.TabIndex = 6;
+            // 
+            // txtbCadde
+            // 
+            this.txtbCadde.Location = new System.Drawing.Point(67, 11);
+            this.txtbCadde.Name = "txtbCadde";
+            this.txtbCadde.Size = new System.Drawing.Size(100, 20);
+            this.txtbCadde.TabIndex = 5;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(7, 96);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(46, 13);
+            this.label13.TabIndex = 4;
+            this.label13.Text = "DaireNo";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(173, 40);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(21, 13);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "No";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(173, 11);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(38, 13);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "Sokak";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 40);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(44, 13);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "Mahalle";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 14);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(38, 13);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Cadde";
+            // 
+            // pctrbxGeri
+            // 
+            this.pctrbxGeri.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxGeri.Image")));
+            this.pctrbxGeri.Location = new System.Drawing.Point(12, 12);
+            this.pctrbxGeri.Name = "pctrbxGeri";
+            this.pctrbxGeri.Size = new System.Drawing.Size(27, 27);
+            this.pctrbxGeri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctrbxGeri.TabIndex = 26;
+            this.pctrbxGeri.TabStop = false;
+            // 
+            // pctrbxAnasayfa
+            // 
+            this.pctrbxAnasayfa.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxAnasayfa.Image")));
+            this.pctrbxAnasayfa.Location = new System.Drawing.Point(530, 12);
+            this.pctrbxAnasayfa.Name = "pctrbxAnasayfa";
+            this.pctrbxAnasayfa.Size = new System.Drawing.Size(27, 27);
+            this.pctrbxAnasayfa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctrbxAnasayfa.TabIndex = 27;
+            this.pctrbxAnasayfa.TabStop = false;
             // 
             // RegisterMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(569, 377);
+            this.Controls.Add(this.pctrbxAnasayfa);
+            this.Controls.Add(this.pctrbxGeri);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.bttnKayitOl);
+            this.Controls.Add(this.rdbttnErkek);
+            this.Controls.Add(this.rdbttnKadin);
+            this.Controls.Add(this.txtbSifre);
+            this.Controls.Add(this.txtbEPosta);
+            this.Controls.Add(this.txtbSoyad);
+            this.Controls.Add(this.txtbAd);
+            this.Controls.Add(this.txtbTcKimlik);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -383,6 +410,8 @@
             this.Text = "RegisterMember";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxAnasayfa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -398,30 +427,32 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtbTcKimlik;
+        private System.Windows.Forms.TextBox txtbAd;
+        private System.Windows.Forms.TextBox txtbSoyad;
+        private System.Windows.Forms.TextBox txtbEPosta;
+        private System.Windows.Forms.TextBox txtbSifre;
+        private System.Windows.Forms.RadioButton rdbttnKadin;
+        private System.Windows.Forms.RadioButton rdbttnErkek;
+        private System.Windows.Forms.Button bttnKayitOl;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbbxİlçe;
+        private System.Windows.Forms.ComboBox cmbbxİl;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtbDaireAdi;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtbDaireNo;
+        private System.Windows.Forms.TextBox txtbNo;
+        private System.Windows.Forms.TextBox txtbSokak;
+        private System.Windows.Forms.TextBox txtbMahalle;
+        private System.Windows.Forms.TextBox txtbCadde;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pctrbxGeri;
+        private System.Windows.Forms.PictureBox pctrbxAnasayfa;
     }
 }
