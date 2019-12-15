@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -36,32 +37,36 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.txtbIsbn = new System.Windows.Forms.TextBox();
+            this.txtbKod = new System.Windows.Forms.TextBox();
+            this.txtbKitapAdi = new System.Windows.Forms.TextBox();
+            this.txtbYazar = new System.Windows.Forms.TextBox();
+            this.txtbYayinevi = new System.Windows.Forms.TextBox();
+            this.txtbBasimTarihi = new System.Windows.Forms.TextBox();
+            this.txtbKategori = new System.Windows.Forms.TextBox();
+            this.txtbTur = new System.Windows.Forms.TextBox();
+            this.bttnTemizle = new System.Windows.Forms.Button();
+            this.bttnKaydet = new System.Windows.Forms.Button();
+            this.bttnSil = new System.Windows.Forms.Button();
+            this.bttnGuncelle = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.bttnAramaTemizle = new System.Windows.Forms.Button();
+            this.bttnAramaBul = new System.Windows.Forms.Button();
+            this.txtbArama = new System.Windows.Forms.TextBox();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -137,243 +142,228 @@
             this.label8.TabIndex = 13;
             this.label8.Text = "Tür";
             // 
-            // textBox1
+            // txtbIsbn
             // 
-            this.textBox1.Location = new System.Drawing.Point(84, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 15;
+            this.txtbIsbn.Location = new System.Drawing.Point(84, 26);
+            this.txtbIsbn.Name = "txtbIsbn";
+            this.txtbIsbn.Size = new System.Drawing.Size(100, 20);
+            this.txtbIsbn.TabIndex = 15;
             // 
-            // textBox2
+            // txtbKod
             // 
-            this.textBox2.Location = new System.Drawing.Point(84, 58);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 17;
+            this.txtbKod.Location = new System.Drawing.Point(84, 58);
+            this.txtbKod.Name = "txtbKod";
+            this.txtbKod.Size = new System.Drawing.Size(100, 20);
+            this.txtbKod.TabIndex = 17;
             // 
-            // textBox3
+            // txtbKitapAdi
             // 
-            this.textBox3.Location = new System.Drawing.Point(84, 87);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 19;
+            this.txtbKitapAdi.Location = new System.Drawing.Point(84, 87);
+            this.txtbKitapAdi.Name = "txtbKitapAdi";
+            this.txtbKitapAdi.Size = new System.Drawing.Size(100, 20);
+            this.txtbKitapAdi.TabIndex = 19;
             // 
-            // textBox4
+            // txtbYazar
             // 
-            this.textBox4.Location = new System.Drawing.Point(84, 115);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 21;
+            this.txtbYazar.Location = new System.Drawing.Point(84, 115);
+            this.txtbYazar.Name = "txtbYazar";
+            this.txtbYazar.Size = new System.Drawing.Size(100, 20);
+            this.txtbYazar.TabIndex = 21;
             // 
-            // textBox5
+            // txtbYayinevi
             // 
-            this.textBox5.Location = new System.Drawing.Point(288, 26);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 23;
+            this.txtbYayinevi.Location = new System.Drawing.Point(288, 26);
+            this.txtbYayinevi.Name = "txtbYayinevi";
+            this.txtbYayinevi.Size = new System.Drawing.Size(100, 20);
+            this.txtbYayinevi.TabIndex = 23;
             // 
-            // textBox6
+            // txtbBasimTarihi
             // 
-            this.textBox6.Location = new System.Drawing.Point(288, 55);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 25;
+            this.txtbBasimTarihi.Location = new System.Drawing.Point(288, 55);
+            this.txtbBasimTarihi.Name = "txtbBasimTarihi";
+            this.txtbBasimTarihi.Size = new System.Drawing.Size(100, 20);
+            this.txtbBasimTarihi.TabIndex = 25;
             // 
-            // textBox7
+            // txtbKategori
             // 
-            this.textBox7.Location = new System.Drawing.Point(288, 84);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 27;
+            this.txtbKategori.Location = new System.Drawing.Point(288, 84);
+            this.txtbKategori.Name = "txtbKategori";
+            this.txtbKategori.Size = new System.Drawing.Size(100, 20);
+            this.txtbKategori.TabIndex = 27;
             // 
-            // textBox8
+            // txtbTur
             // 
-            this.textBox8.Location = new System.Drawing.Point(288, 115);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 29;
+            this.txtbTur.Location = new System.Drawing.Point(288, 115);
+            this.txtbTur.Name = "txtbTur";
+            this.txtbTur.Size = new System.Drawing.Size(100, 20);
+            this.txtbTur.TabIndex = 29;
             // 
-            // button1
+            // bttnTemizle
             // 
-            this.button1.Location = new System.Drawing.Point(197, 150);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(55, 28);
-            this.button1.TabIndex = 30;
-            this.button1.Text = "Temizle";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bttnTemizle.Location = new System.Drawing.Point(197, 150);
+            this.bttnTemizle.Name = "bttnTemizle";
+            this.bttnTemizle.Size = new System.Drawing.Size(55, 28);
+            this.bttnTemizle.TabIndex = 30;
+            this.bttnTemizle.Text = "Temizle";
+            this.bttnTemizle.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // bttnKaydet
             // 
-            this.button2.Location = new System.Drawing.Point(61, 184);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 32;
-            this.button2.Text = "Kaydet";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bttnKaydet.Location = new System.Drawing.Point(61, 184);
+            this.bttnKaydet.Name = "bttnKaydet";
+            this.bttnKaydet.Size = new System.Drawing.Size(75, 23);
+            this.bttnKaydet.TabIndex = 32;
+            this.bttnKaydet.Text = "Kaydet";
+            this.bttnKaydet.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // bttnSil
             // 
-            this.button3.Location = new System.Drawing.Point(188, 184);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 34;
-            this.button3.Text = "Sil";
-            this.button3.UseVisualStyleBackColor = true;
+            this.bttnSil.Location = new System.Drawing.Point(188, 184);
+            this.bttnSil.Name = "bttnSil";
+            this.bttnSil.Size = new System.Drawing.Size(75, 23);
+            this.bttnSil.TabIndex = 34;
+            this.bttnSil.Text = "Sil";
+            this.bttnSil.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // bttnGuncelle
             // 
-            this.button4.Location = new System.Drawing.Point(322, 184);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 36;
-            this.button4.Text = "Güncelle";
-            this.button4.UseVisualStyleBackColor = true;
+            this.bttnGuncelle.Location = new System.Drawing.Point(322, 184);
+            this.bttnGuncelle.Name = "bttnGuncelle";
+            this.bttnGuncelle.Size = new System.Drawing.Size(75, 23);
+            this.bttnGuncelle.TabIndex = 36;
+            this.bttnGuncelle.Text = "Güncelle";
+            this.bttnGuncelle.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.listBox1);
-            this.groupBox1.Controls.Add(this.button6);
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.listView1);
+            this.groupBox1.Controls.Add(this.txtbArama);
+            this.groupBox1.Controls.Add(this.bttnAramaTemizle);
+            this.groupBox1.Controls.Add(this.bttnAramaBul);
             this.groupBox1.Location = new System.Drawing.Point(3, 212);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(457, 130);
+            this.groupBox1.Size = new System.Drawing.Size(476, 130);
             this.groupBox1.TabIndex = 37;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kayıtlı Kitapların Listesi";
             // 
-            // comboBox1
+            // bttnAramaTemizle
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(22, 19);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(139, 21);
-            this.comboBox1.TabIndex = 0;
+            this.bttnAramaTemizle.Location = new System.Drawing.Point(265, 19);
+            this.bttnAramaTemizle.Name = "bttnAramaTemizle";
+            this.bttnAramaTemizle.Size = new System.Drawing.Size(75, 23);
+            this.bttnAramaTemizle.TabIndex = 34;
+            this.bttnAramaTemizle.Text = "Temizle";
+            this.bttnAramaTemizle.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // bttnAramaBul
             // 
-            this.button5.Location = new System.Drawing.Point(184, 19);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 33;
-            this.button5.Text = "Bul";
-            this.button5.UseVisualStyleBackColor = true;
+            this.bttnAramaBul.Location = new System.Drawing.Point(184, 19);
+            this.bttnAramaBul.Name = "bttnAramaBul";
+            this.bttnAramaBul.Size = new System.Drawing.Size(75, 23);
+            this.bttnAramaBul.TabIndex = 33;
+            this.bttnAramaBul.Text = "Bul";
+            this.bttnAramaBul.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // txtbArama
             // 
-            this.button6.Location = new System.Drawing.Point(265, 19);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 34;
-            this.button6.Text = "Temizle";
-            this.button6.UseVisualStyleBackColor = true;
+            this.txtbArama.Location = new System.Drawing.Point(33, 21);
+            this.txtbArama.Name = "txtbArama";
+            this.txtbArama.Size = new System.Drawing.Size(134, 20);
+            this.txtbArama.TabIndex = 51;
             // 
-            // listBox1
+            // listView1
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(0, 42);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(457, 82);
-            this.listBox1.TabIndex = 35;
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7,
+            this.columnHeader8});
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(0, 47);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(470, 77);
+            this.listView1.TabIndex = 52;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
             // 
-            // label9
+            // columnHeader1
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(-3, 44);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(48, 13);
-            this.label9.TabIndex = 37;
-            this.label9.Text = "ISBNNO";
+            this.columnHeader1.Text = "ISBNNO";
             // 
-            // label10
+            // columnHeader2
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(55, 44);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(26, 13);
-            this.label10.TabIndex = 39;
-            this.label10.Text = "Kod";
+            this.columnHeader2.Text = "Kod";
             // 
-            // label11
+            // columnHeader3
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(100, 44);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(49, 13);
-            this.label11.TabIndex = 40;
-            this.label11.Text = "Kitap Adı";
+            this.columnHeader3.Text = "KitapAdı";
             // 
-            // label12
+            // columnHeader4
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(164, 44);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(34, 13);
-            this.label12.TabIndex = 42;
-            this.label12.Text = "Yazar";
+            this.columnHeader4.Text = "Yazar";
             // 
-            // label13
+            // columnHeader5
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(212, 44);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(47, 13);
-            this.label13.TabIndex = 44;
-            this.label13.Text = "Yayınevi";
+            this.columnHeader5.Text = "Yayınevi";
             // 
-            // label14
+            // columnHeader6
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(276, 44);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(64, 13);
-            this.label14.TabIndex = 46;
-            this.label14.Text = "Basım Tarihi";
+            this.columnHeader6.Text = "BasımTarihi";
             // 
-            // label15
+            // columnHeader7
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(348, 44);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(46, 13);
-            this.label15.TabIndex = 48;
-            this.label15.Text = "Kategori";
+            this.columnHeader7.Text = "Kategori";
             // 
-            // label16
+            // columnHeader8
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(417, 44);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(23, 13);
-            this.label16.TabIndex = 50;
-            this.label16.Text = "Tür";
+            this.columnHeader8.Text = "Tür";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(437, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(36, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 38;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(3, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(21, 24);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 39;
+            this.pictureBox2.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(472, 354);
+            this.ClientSize = new System.Drawing.Size(491, 354);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.bttnGuncelle);
+            this.Controls.Add(this.bttnSil);
+            this.Controls.Add(this.bttnKaydet);
+            this.Controls.Add(this.bttnTemizle);
+            this.Controls.Add(this.txtbTur);
+            this.Controls.Add(this.txtbKategori);
+            this.Controls.Add(this.txtbBasimTarihi);
+            this.Controls.Add(this.txtbYayinevi);
+            this.Controls.Add(this.txtbYazar);
+            this.Controls.Add(this.txtbKitapAdi);
+            this.Controls.Add(this.txtbKod);
+            this.Controls.Add(this.txtbIsbn);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -382,10 +372,13 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -401,31 +394,33 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox txtbIsbn;
+        private System.Windows.Forms.TextBox txtbKod;
+        private System.Windows.Forms.TextBox txtbKitapAdi;
+        private System.Windows.Forms.TextBox txtbYazar;
+        private System.Windows.Forms.TextBox txtbYayinevi;
+        private System.Windows.Forms.TextBox txtbBasimTarihi;
+        private System.Windows.Forms.TextBox txtbKategori;
+        private System.Windows.Forms.TextBox txtbTur;
+        private System.Windows.Forms.Button bttnTemizle;
+        private System.Windows.Forms.Button bttnKaydet;
+        private System.Windows.Forms.Button bttnSil;
+        private System.Windows.Forms.Button bttnGuncelle;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button bttnAramaTemizle;
+        private System.Windows.Forms.Button bttnAramaBul;
+        private System.Windows.Forms.TextBox txtbArama;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
