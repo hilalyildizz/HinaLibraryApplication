@@ -227,7 +227,7 @@
             // 
             // txtbTur
             // 
-            this.txtbTur.Location = new System.Drawing.Point(357, 116);
+            this.txtbTur.Location = new System.Drawing.Point(357, 122);
             this.txtbTur.Name = "txtbTur";
             this.txtbTur.Size = new System.Drawing.Size(100, 20);
             this.txtbTur.TabIndex = 29;
@@ -250,7 +250,7 @@
             // 
             // txtbIsbn
             // 
-            this.txtbIsbn.Location = new System.Drawing.Point(153, 22);
+            this.txtbIsbn.Location = new System.Drawing.Point(153, 25);
             this.txtbIsbn.Name = "txtbIsbn";
             this.txtbIsbn.Size = new System.Drawing.Size(100, 20);
             this.txtbIsbn.TabIndex = 15;
@@ -374,7 +374,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(97, 25);
+            this.label1.Location = new System.Drawing.Point(97, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 15);
             this.label1.TabIndex = 0;
@@ -383,7 +383,7 @@
             // 
             // txtbDurum
             // 
-            this.txtbDurum.Location = new System.Drawing.Point(153, 140);
+            this.txtbDurum.Location = new System.Drawing.Point(153, 138);
             this.txtbDurum.Name = "txtbDurum";
             this.txtbDurum.Size = new System.Drawing.Size(100, 20);
             this.txtbDurum.TabIndex = 42;
