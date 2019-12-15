@@ -46,36 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BookRecord.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BookRecord.Designer.cs">
-      <DependentUpon>BookRecord.cs</DependentUpon>
-    </Compile>
-    <Compile Include="About.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="About.Designer.cs">
-      <DependentUpon>About.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LendingRecord.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LendingRecord.Designer.cs">
-      <DependentUpon>LendingRecord.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PasswordChange.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PasswordChange.Designer.cs">
-      <DependentUpon>PasswordChange.cs</DependentUpon>
-    </Compile>
-    <Compile Include="NewPersonRecord.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NewPersonRecord.designer.cs">
-      <DependentUpon>NewPersonRecord.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,21 +72,6 @@
     <Compile Include="RegisterStaff.Designer.cs">
       <DependentUpon>RegisterStaff.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BookRecord.resx">
-      <DependentUpon>BookRecord.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="About.resx">
-      <DependentUpon>About.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LendingRecord.resx">
-      <DependentUpon>LendingRecord.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PasswordChange.resx">
-      <DependentUpon>PasswordChange.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NewPersonRecord.resx">
-      <DependentUpon>NewPersonRecord.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
