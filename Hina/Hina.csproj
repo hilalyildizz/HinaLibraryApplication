@@ -106,6 +106,18 @@
     <Compile Include="Kullanici.cs">
       <DependentUpon>HinaDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="MemberBookLend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberBookLend.Designer.cs">
+      <DependentUpon>MemberBookLend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberHome.Designer.cs">
+      <DependentUpon>MemberHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="Odunc.cs">
       <DependentUpon>HinaDB.tt</DependentUpon>
     </Compile>
@@ -153,11 +165,23 @@
     <Compile Include="sp_helpdiagrams_Result.cs">
       <DependentUpon>HinaDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="StaffAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffAbout.Designer.cs">
+      <DependentUpon>StaffAbout.cs</DependentUpon>
+    </Compile>
     <Compile Include="StaffHome.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StaffHome.designer.cs">
       <DependentUpon>StaffHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffRegisterMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffRegisterMember.Designer.cs">
+      <DependentUpon>StaffRegisterMember.cs</DependentUpon>
     </Compile>
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>HinaDB.tt</DependentUpon>
@@ -186,6 +210,12 @@
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MemberBookLend.resx">
+      <DependentUpon>MemberBookLend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberHome.resx">
+      <DependentUpon>MemberHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PersonRecording.resx">
       <DependentUpon>PersonRecording.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,8 +240,14 @@
     <EmbeddedResource Include="RegisterStaff.resx">
       <DependentUpon>RegisterStaff.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="StaffAbout.resx">
+      <DependentUpon>StaffAbout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StaffHome.resx">
       <DependentUpon>StaffHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffRegisterMember.resx">
+      <DependentUpon>StaffRegisterMember.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="HinaDB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

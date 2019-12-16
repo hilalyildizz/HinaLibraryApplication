@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Hina
 {
-    public partial class StaffHome : Form
+    public partial class MemberHome : Form
     {
-        public StaffHome()
+        public MemberHome()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void StaffHome_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

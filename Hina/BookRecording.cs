@@ -61,5 +61,10 @@ namespace Hina
         {
 
         }
+
+        private void txtbDurum_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
