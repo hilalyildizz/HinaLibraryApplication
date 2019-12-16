@@ -1,6 +1,6 @@
 ﻿namespace Hina
 {
-    partial class RegisterMember
+    partial class StaffRegisterMember
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterMember));
-            this.pctrbxGeri = new System.Windows.Forms.PictureBox();
-            this.pctrbxSayfayiKapat = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffRegisterMember));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtbxSicilNo = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.txtbxTelefonNo = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -67,38 +67,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pctrbxGeri = new System.Windows.Forms.PictureBox();
+            this.pctrbxSayfayiKapat = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxSayfayiKapat)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxSayfayiKapat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pctrbxGeri
-            // 
-            this.pctrbxGeri.BackColor = System.Drawing.Color.Transparent;
-            this.pctrbxGeri.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxGeri.Image")));
-            this.pctrbxGeri.Location = new System.Drawing.Point(12, 12);
-            this.pctrbxGeri.Name = "pctrbxGeri";
-            this.pctrbxGeri.Size = new System.Drawing.Size(20, 20);
-            this.pctrbxGeri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctrbxGeri.TabIndex = 26;
-            this.pctrbxGeri.TabStop = false;
-            // 
-            // pctrbxSayfayiKapat
-            // 
-            this.pctrbxSayfayiKapat.BackColor = System.Drawing.Color.Transparent;
-            this.pctrbxSayfayiKapat.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxSayfayiKapat.Image")));
-            this.pctrbxSayfayiKapat.Location = new System.Drawing.Point(733, 12);
-            this.pctrbxSayfayiKapat.Name = "pctrbxSayfayiKapat";
-            this.pctrbxSayfayiKapat.Size = new System.Drawing.Size(21, 21);
-            this.pctrbxSayfayiKapat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctrbxSayfayiKapat.TabIndex = 27;
-            this.pctrbxSayfayiKapat.TabStop = false;
-            // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtbxSicilNo);
+            this.groupBox1.Controls.Add(this.label18);
             this.groupBox1.Controls.Add(this.txtbxTelefonNo);
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.groupBox2);
@@ -118,27 +100,44 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(100, 2);
+            this.groupBox1.Location = new System.Drawing.Point(120, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(554, 445);
-            this.groupBox1.TabIndex = 28;
+            this.groupBox1.Size = new System.Drawing.Size(528, 436);
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // txtbxSicilNo
+            // 
+            this.txtbxSicilNo.Location = new System.Drawing.Point(166, 43);
+            this.txtbxSicilNo.Name = "txtbxSicilNo";
+            this.txtbxSicilNo.Size = new System.Drawing.Size(100, 20);
+            this.txtbxSicilNo.TabIndex = 63;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label18.Location = new System.Drawing.Point(64, 45);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(54, 18);
+            this.label18.TabIndex = 62;
+            this.label18.Text = "Sicil No";
             // 
             // txtbxTelefonNo
             // 
-            this.txtbxTelefonNo.Location = new System.Drawing.Point(165, 154);
+            this.txtbxTelefonNo.Location = new System.Drawing.Point(170, 173);
             this.txtbxTelefonNo.Name = "txtbxTelefonNo";
             this.txtbxTelefonNo.Size = new System.Drawing.Size(100, 20);
-            this.txtbxTelefonNo.TabIndex = 44;
+            this.txtbxTelefonNo.TabIndex = 61;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label17.Location = new System.Drawing.Point(64, 157);
+            this.label17.Location = new System.Drawing.Point(69, 176);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(76, 18);
-            this.label17.TabIndex = 43;
+            this.label17.TabIndex = 60;
             this.label17.Text = "Telefon No";
             // 
             // groupBox2
@@ -159,10 +158,10 @@
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Location = new System.Drawing.Point(146, 203);
+            this.groupBox2.Location = new System.Drawing.Point(148, 219);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(322, 126);
-            this.groupBox2.TabIndex = 42;
+            this.groupBox2.TabIndex = 59;
             this.groupBox2.TabStop = false;
             // 
             // txtbxİlce
@@ -303,10 +302,10 @@
             // 
             // bttnKayitOl
             // 
-            this.bttnKayitOl.Location = new System.Drawing.Point(190, 388);
+            this.bttnKayitOl.Location = new System.Drawing.Point(192, 404);
             this.bttnKayitOl.Name = "bttnKayitOl";
             this.bttnKayitOl.Size = new System.Drawing.Size(75, 23);
-            this.bttnKayitOl.TabIndex = 41;
+            this.bttnKayitOl.TabIndex = 58;
             this.bttnKayitOl.Text = "Kayıt Ol";
             this.bttnKayitOl.UseVisualStyleBackColor = true;
             // 
@@ -314,10 +313,10 @@
             // 
             this.rdbttnErkek.AutoSize = true;
             this.rdbttnErkek.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rdbttnErkek.Location = new System.Drawing.Point(220, 126);
+            this.rdbttnErkek.Location = new System.Drawing.Point(224, 142);
             this.rdbttnErkek.Name = "rdbttnErkek";
             this.rdbttnErkek.Size = new System.Drawing.Size(60, 22);
-            this.rdbttnErkek.TabIndex = 40;
+            this.rdbttnErkek.TabIndex = 57;
             this.rdbttnErkek.TabStop = true;
             this.rdbttnErkek.Text = "Erkek";
             this.rdbttnErkek.UseVisualStyleBackColor = true;
@@ -326,192 +325,189 @@
             // 
             this.rdbttnKadin.AutoSize = true;
             this.rdbttnKadin.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rdbttnKadin.Location = new System.Drawing.Point(166, 125);
+            this.rdbttnKadin.Location = new System.Drawing.Point(166, 141);
             this.rdbttnKadin.Name = "rdbttnKadin";
             this.rdbttnKadin.Size = new System.Drawing.Size(60, 22);
-            this.rdbttnKadin.TabIndex = 39;
+            this.rdbttnKadin.TabIndex = 56;
             this.rdbttnKadin.TabStop = true;
             this.rdbttnKadin.Text = "Kadın";
             this.rdbttnKadin.UseVisualStyleBackColor = true;
             // 
             // txtbSifre
             // 
-            this.txtbSifre.Location = new System.Drawing.Point(164, 358);
+            this.txtbSifre.Location = new System.Drawing.Point(166, 374);
             this.txtbSifre.Name = "txtbSifre";
             this.txtbSifre.Size = new System.Drawing.Size(100, 20);
-            this.txtbSifre.TabIndex = 38;
+            this.txtbSifre.TabIndex = 55;
             // 
             // txtbEPosta
             // 
-            this.txtbEPosta.Location = new System.Drawing.Point(164, 335);
+            this.txtbEPosta.Location = new System.Drawing.Point(166, 351);
             this.txtbEPosta.Name = "txtbEPosta";
             this.txtbEPosta.Size = new System.Drawing.Size(100, 20);
-            this.txtbEPosta.TabIndex = 37;
+            this.txtbEPosta.TabIndex = 54;
             // 
             // txtbSoyad
             // 
-            this.txtbSoyad.Location = new System.Drawing.Point(165, 99);
+            this.txtbSoyad.Location = new System.Drawing.Point(165, 115);
             this.txtbSoyad.Name = "txtbSoyad";
             this.txtbSoyad.Size = new System.Drawing.Size(100, 20);
-            this.txtbSoyad.TabIndex = 36;
+            this.txtbSoyad.TabIndex = 53;
             // 
             // txtbAd
             // 
-            this.txtbAd.Location = new System.Drawing.Point(165, 74);
+            this.txtbAd.Location = new System.Drawing.Point(165, 90);
             this.txtbAd.Name = "txtbAd";
             this.txtbAd.Size = new System.Drawing.Size(100, 20);
-            this.txtbAd.TabIndex = 35;
+            this.txtbAd.TabIndex = 52;
             // 
             // txtbTcKimlik
             // 
-            this.txtbTcKimlik.Location = new System.Drawing.Point(165, 51);
+            this.txtbTcKimlik.Location = new System.Drawing.Point(165, 67);
             this.txtbTcKimlik.Name = "txtbTcKimlik";
             this.txtbTcKimlik.Size = new System.Drawing.Size(100, 20);
-            this.txtbTcKimlik.TabIndex = 34;
+            this.txtbTcKimlik.TabIndex = 51;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(67, 361);
+            this.label8.Location = new System.Drawing.Point(69, 377);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(37, 18);
-            this.label8.TabIndex = 33;
+            this.label8.TabIndex = 50;
             this.label8.Text = "Şifre";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(67, 338);
+            this.label7.Location = new System.Drawing.Point(69, 354);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(54, 18);
-            this.label7.TabIndex = 32;
+            this.label7.TabIndex = 49;
             this.label7.Text = "E-Posta";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(67, 197);
+            this.label6.Location = new System.Drawing.Point(69, 213);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 18);
-            this.label6.TabIndex = 31;
+            this.label6.TabIndex = 48;
             this.label6.Text = "Adres";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(64, 126);
+            this.label5.Location = new System.Drawing.Point(64, 142);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 18);
-            this.label5.TabIndex = 30;
+            this.label5.TabIndex = 47;
             this.label5.Text = "Cinsiyet";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(64, 102);
+            this.label4.Location = new System.Drawing.Point(64, 118);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(45, 18);
-            this.label4.TabIndex = 29;
+            this.label4.TabIndex = 46;
             this.label4.Text = "Soyad";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(64, 77);
+            this.label3.Location = new System.Drawing.Point(64, 93);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(25, 18);
-            this.label3.TabIndex = 28;
+            this.label3.TabIndex = 45;
             this.label3.Text = "Ad";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(64, 58);
+            this.label2.Location = new System.Drawing.Point(64, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 18);
-            this.label2.TabIndex = 27;
+            this.label2.TabIndex = 44;
             this.label2.Text = "TcKimlikNo";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(161, 0);
+            this.label1.Location = new System.Drawing.Point(129, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 28);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "HİNA ÜYE KAYIT";
+            this.label1.Size = new System.Drawing.Size(244, 28);
+            this.label1.TabIndex = 43;
+            this.label1.Text = "HİNA ADMİN KAYIT ";
+            // 
+            // pctrbxGeri
+            // 
+            this.pctrbxGeri.BackColor = System.Drawing.Color.Transparent;
+            this.pctrbxGeri.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxGeri.Image")));
+            this.pctrbxGeri.Location = new System.Drawing.Point(12, 12);
+            this.pctrbxGeri.Name = "pctrbxGeri";
+            this.pctrbxGeri.Size = new System.Drawing.Size(20, 20);
+            this.pctrbxGeri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctrbxGeri.TabIndex = 33;
+            this.pctrbxGeri.TabStop = false;
+            // 
+            // pctrbxSayfayiKapat
+            // 
+            this.pctrbxSayfayiKapat.BackColor = System.Drawing.Color.Transparent;
+            this.pctrbxSayfayiKapat.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxSayfayiKapat.Image")));
+            this.pctrbxSayfayiKapat.Location = new System.Drawing.Point(736, 12);
+            this.pctrbxSayfayiKapat.Name = "pctrbxSayfayiKapat";
+            this.pctrbxSayfayiKapat.Size = new System.Drawing.Size(21, 21);
+            this.pctrbxSayfayiKapat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctrbxSayfayiKapat.TabIndex = 34;
+            this.pctrbxSayfayiKapat.TabStop = false;
+            this.pctrbxSayfayiKapat.Click += new System.EventHandler(this.pctrbxSayfayiKapat_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(38, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(38, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 20);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 45;
+            this.pictureBox1.TabIndex = 64;
             this.pictureBox1.TabStop = false;
-            this.pctrbxSayfayiKapat.BackColor = System.Drawing.Color.Transparent;
-            this.pctrbxSayfayiKapat.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxSayfayiKapat.Image")));
-            this.pctrbxSayfayiKapat.Location = new System.Drawing.Point(733, 12);
-            this.pctrbxSayfayiKapat.Name = "pctrbxSayfayiKapat";
-            this.pctrbxSayfayiKapat.Size = new System.Drawing.Size(27, 27);
-            this.pctrbxSayfayiKapat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctrbxSayfayiKapat.TabIndex = 27;
-            this.pctrbxSayfayiKapat.TabStop = false;
-            this.pctrbxSayfayiKapat.Click += new System.EventHandler(this.pctrbxSayfayiKapat_Click);
             // 
-            // RegisterMember
+            // StaffRegisterMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(772, 450);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pctrbxSayfayiKapat);
             this.Controls.Add(this.pctrbxGeri);
+            this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "RegisterMember";
-            this.Text = "RegisterMember";
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxSayfayiKapat)).EndInit();
+            this.Name = "StaffRegisterMember";
+            this.Text = "StaffRegisterMember";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxSayfayiKapat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pctrbxGeri;
-        private System.Windows.Forms.PictureBox pctrbxSayfayiKapat;
+
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button bttnKayitOl;
-        private System.Windows.Forms.RadioButton rdbttnErkek;
-        private System.Windows.Forms.RadioButton rdbttnKadin;
-        private System.Windows.Forms.TextBox txtbSifre;
-        private System.Windows.Forms.TextBox txtbEPosta;
-        private System.Windows.Forms.TextBox txtbSoyad;
-        private System.Windows.Forms.TextBox txtbAd;
-        private System.Windows.Forms.TextBox txtbTcKimlik;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txtbxİlce;
         private System.Windows.Forms.TextBox txtbxİl;
@@ -529,8 +525,28 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button bttnKayitOl;
+        private System.Windows.Forms.RadioButton rdbttnErkek;
+        private System.Windows.Forms.RadioButton rdbttnKadin;
+        private System.Windows.Forms.TextBox txtbSifre;
+        private System.Windows.Forms.TextBox txtbEPosta;
+        private System.Windows.Forms.TextBox txtbSoyad;
+        private System.Windows.Forms.TextBox txtbAd;
+        private System.Windows.Forms.TextBox txtbTcKimlik;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pctrbxGeri;
+        private System.Windows.Forms.PictureBox pctrbxSayfayiKapat;
         private System.Windows.Forms.TextBox txtbxTelefonNo;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txtbxSicilNo;
+        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

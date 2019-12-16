@@ -38,10 +38,8 @@
             this.txtbsifre = new System.Windows.Forms.TextBox();
             this.txtbeposta = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pctrbxGeri = new System.Windows.Forms.PictureBox();
             this.pctrbxSayfayiKapat = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxSayfayiKapat)).BeginInit();
             this.SuspendLayout();
             // 
@@ -149,24 +147,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Giriş Yap";
             // 
-            // pctrbxGeri
-            // 
-            this.pctrbxGeri.BackColor = System.Drawing.Color.Transparent;
-            this.pctrbxGeri.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxGeri.Image")));
-            this.pctrbxGeri.Location = new System.Drawing.Point(23, 12);
-            this.pctrbxGeri.Name = "pctrbxGeri";
-            this.pctrbxGeri.Size = new System.Drawing.Size(33, 33);
-            this.pctrbxGeri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctrbxGeri.TabIndex = 1;
-            this.pctrbxGeri.TabStop = false;
-            // 
             // pctrbxSayfayiKapat
             // 
             this.pctrbxSayfayiKapat.BackColor = System.Drawing.Color.Transparent;
             this.pctrbxSayfayiKapat.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxSayfayiKapat.Image")));
-            this.pctrbxSayfayiKapat.Location = new System.Drawing.Point(711, 12);
+            this.pctrbxSayfayiKapat.Location = new System.Drawing.Point(739, 12);
             this.pctrbxSayfayiKapat.Name = "pctrbxSayfayiKapat";
-            this.pctrbxSayfayiKapat.Size = new System.Drawing.Size(35, 33);
+            this.pctrbxSayfayiKapat.Size = new System.Drawing.Size(21, 21);
             this.pctrbxSayfayiKapat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrbxSayfayiKapat.TabIndex = 2;
             this.pctrbxSayfayiKapat.TabStop = false;
@@ -180,14 +167,12 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(772, 450);
             this.Controls.Add(this.pctrbxSayfayiKapat);
-            this.Controls.Add(this.pctrbxGeri);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.Text = "Login";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxSayfayiKapat)).EndInit();
             this.ResumeLayout(false);
 
@@ -204,7 +189,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pctrbxGeri;
         private System.Windows.Forms.PictureBox pctrbxSayfayiKapat;
     }
 }

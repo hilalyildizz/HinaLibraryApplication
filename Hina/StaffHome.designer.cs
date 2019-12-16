@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffHome));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pctrbxCikis = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,7 +44,9 @@
             this.pctrbxUyeIslemleri = new System.Windows.Forms.PictureBox();
             this.pctrbxEmanetIslemleri = new System.Windows.Forms.PictureBox();
             this.pctrbxKitapIslemleri = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxCikis)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxHakkinda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxAyarlar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxGecikmisKitaplar)).BeginInit();
@@ -53,6 +57,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.pctrbxCikis);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -65,17 +71,39 @@
             this.groupBox1.Controls.Add(this.pctrbxUyeIslemleri);
             this.groupBox1.Controls.Add(this.pctrbxEmanetIslemleri);
             this.groupBox1.Controls.Add(this.pctrbxKitapIslemleri);
-            this.groupBox1.Location = new System.Drawing.Point(55, 38);
+            this.groupBox1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox1.Location = new System.Drawing.Point(56, 66);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(653, 372);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(309, 346);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 18);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Çıkış";
+            // 
+            // pctrbxCikis
+            // 
+            this.pctrbxCikis.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxCikis.Image")));
+            this.pctrbxCikis.Location = new System.Drawing.Point(295, 272);
+            this.pctrbxCikis.Name = "pctrbxCikis";
+            this.pctrbxCikis.Size = new System.Drawing.Size(60, 60);
+            this.pctrbxCikis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctrbxCikis.TabIndex = 12;
+            this.pctrbxCikis.TabStop = false;
+            this.pctrbxCikis.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(490, 295);
+            this.label6.Location = new System.Drawing.Point(490, 236);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 18);
             this.label6.TabIndex = 11;
@@ -86,7 +114,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(298, 295);
+            this.label5.Location = new System.Drawing.Point(298, 236);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 18);
             this.label5.TabIndex = 10;
@@ -97,7 +125,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(92, 295);
+            this.label4.Location = new System.Drawing.Point(92, 236);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(115, 18);
             this.label4.TabIndex = 9;
@@ -108,7 +136,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(462, 140);
+            this.label3.Location = new System.Drawing.Point(462, 81);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 18);
             this.label3.TabIndex = 8;
@@ -119,7 +147,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(279, 140);
+            this.label2.Location = new System.Drawing.Point(279, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 18);
             this.label2.TabIndex = 7;
@@ -130,7 +158,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(92, 140);
+            this.label1.Location = new System.Drawing.Point(92, 81);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 18);
             this.label1.TabIndex = 6;
@@ -140,7 +168,7 @@
             // pctrbxHakkinda
             // 
             this.pctrbxHakkinda.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxHakkinda.Image")));
-            this.pctrbxHakkinda.Location = new System.Drawing.Point(487, 219);
+            this.pctrbxHakkinda.Location = new System.Drawing.Point(487, 160);
             this.pctrbxHakkinda.Name = "pctrbxHakkinda";
             this.pctrbxHakkinda.Size = new System.Drawing.Size(60, 60);
             this.pctrbxHakkinda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -151,7 +179,7 @@
             // pctrbxAyarlar
             // 
             this.pctrbxAyarlar.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxAyarlar.Image")));
-            this.pctrbxAyarlar.Location = new System.Drawing.Point(295, 219);
+            this.pctrbxAyarlar.Location = new System.Drawing.Point(295, 160);
             this.pctrbxAyarlar.Name = "pctrbxAyarlar";
             this.pctrbxAyarlar.Size = new System.Drawing.Size(60, 60);
             this.pctrbxAyarlar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -162,7 +190,7 @@
             // pctrbxGecikmisKitaplar
             // 
             this.pctrbxGecikmisKitaplar.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxGecikmisKitaplar.Image")));
-            this.pctrbxGecikmisKitaplar.Location = new System.Drawing.Point(112, 219);
+            this.pctrbxGecikmisKitaplar.Location = new System.Drawing.Point(112, 160);
             this.pctrbxGecikmisKitaplar.Name = "pctrbxGecikmisKitaplar";
             this.pctrbxGecikmisKitaplar.Size = new System.Drawing.Size(60, 60);
             this.pctrbxGecikmisKitaplar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -173,7 +201,7 @@
             // pctrbxUyeIslemleri
             // 
             this.pctrbxUyeIslemleri.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxUyeIslemleri.Image")));
-            this.pctrbxUyeIslemleri.Location = new System.Drawing.Point(295, 73);
+            this.pctrbxUyeIslemleri.Location = new System.Drawing.Point(295, 14);
             this.pctrbxUyeIslemleri.Name = "pctrbxUyeIslemleri";
             this.pctrbxUyeIslemleri.Size = new System.Drawing.Size(60, 60);
             this.pctrbxUyeIslemleri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -184,7 +212,7 @@
             // pctrbxEmanetIslemleri
             // 
             this.pctrbxEmanetIslemleri.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxEmanetIslemleri.Image")));
-            this.pctrbxEmanetIslemleri.Location = new System.Drawing.Point(487, 73);
+            this.pctrbxEmanetIslemleri.Location = new System.Drawing.Point(487, 14);
             this.pctrbxEmanetIslemleri.Name = "pctrbxEmanetIslemleri";
             this.pctrbxEmanetIslemleri.Size = new System.Drawing.Size(60, 60);
             this.pctrbxEmanetIslemleri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -195,7 +223,7 @@
             // pctrbxKitapIslemleri
             // 
             this.pctrbxKitapIslemleri.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxKitapIslemleri.Image")));
-            this.pctrbxKitapIslemleri.Location = new System.Drawing.Point(112, 73);
+            this.pctrbxKitapIslemleri.Location = new System.Drawing.Point(112, 14);
             this.pctrbxKitapIslemleri.Name = "pctrbxKitapIslemleri";
             this.pctrbxKitapIslemleri.Size = new System.Drawing.Size(60, 60);
             this.pctrbxKitapIslemleri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -203,17 +231,30 @@
             this.pctrbxKitapIslemleri.TabStop = false;
             this.pctrbxKitapIslemleri.Click += new System.EventHandler(this.pctrbxKitapIslemleri_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.Location = new System.Drawing.Point(313, 24);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(152, 23);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Personel Anasayfa";
+            // 
             // StaffHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(772, 450);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StaffHome";
             this.Text = "StaffHome";
+            this.Load += new System.EventHandler(this.StaffHome_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxCikis)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxHakkinda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxAyarlar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxGecikmisKitaplar)).EndInit();
@@ -221,6 +262,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxEmanetIslemleri)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxKitapIslemleri)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -239,5 +281,8 @@
         private System.Windows.Forms.PictureBox pctrbxUyeIslemleri;
         private System.Windows.Forms.PictureBox pctrbxEmanetIslemleri;
         private System.Windows.Forms.PictureBox pctrbxKitapIslemleri;
+        private System.Windows.Forms.PictureBox pctrbxCikis;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }

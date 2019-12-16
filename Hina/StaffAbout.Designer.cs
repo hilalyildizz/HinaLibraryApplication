@@ -1,16 +1,16 @@
 ﻿namespace Hina
 {
-    partial class About
+    partial class StaffAbout
     {
         /// <summary>
-        ///Gerekli tasarımcı değişkeni.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///Kullanılan tüm kaynakları temizleyin.
+        /// Clean up any resources being used.
         /// </summary>
-        ///<param name="disposing">yönetilen kaynaklar dispose edilmeliyse doğru; aksi halde yanlış.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,51 +20,39 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer üretilen kod
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Tasarımcı desteği için gerekli metot - bu metodun 
-        ///içeriğini kod düzenleyici ile değiştirmeyin.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(About));
-            this.pctrbxSayfayiKapat = new System.Windows.Forms.PictureBox();
-            this.pctrbxGeri = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffAbout));
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxSayfayiKapat)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.pctrbxGeri = new System.Windows.Forms.PictureBox();
+            this.pctrbxSayfayiKapat = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxSayfayiKapat)).BeginInit();
             this.SuspendLayout();
             // 
-            // pctrbxSayfayiKapat
+            // pictureBox1
             // 
-            this.pctrbxSayfayiKapat.BackColor = System.Drawing.Color.Transparent;
-            this.pctrbxSayfayiKapat.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxSayfayiKapat.Image")));
-            this.pctrbxSayfayiKapat.Location = new System.Drawing.Point(739, 12);
-            this.pctrbxSayfayiKapat.Name = "pctrbxSayfayiKapat";
-            this.pctrbxSayfayiKapat.Size = new System.Drawing.Size(21, 21);
-            this.pctrbxSayfayiKapat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctrbxSayfayiKapat.TabIndex = 7;
-            this.pctrbxSayfayiKapat.TabStop = false;
-            this.pctrbxSayfayiKapat.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pctrbxGeri
-            // 
-            this.pctrbxGeri.BackColor = System.Drawing.Color.Transparent;
-            this.pctrbxGeri.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxGeri.Image")));
-            this.pctrbxGeri.Location = new System.Drawing.Point(12, 12);
-            this.pctrbxGeri.Name = "pctrbxGeri";
-            this.pctrbxGeri.Size = new System.Drawing.Size(20, 20);
-            this.pctrbxGeri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctrbxGeri.TabIndex = 8;
-            this.pctrbxGeri.TabStop = false;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(38, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 49;
+            this.pictureBox1.TabStop = false;
             // 
             // groupBox1
             // 
@@ -72,12 +60,11 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(143, 56);
+            this.groupBox1.Location = new System.Drawing.Point(143, 57);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(474, 321);
-            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabIndex = 48;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label6
             // 
@@ -119,18 +106,29 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Kütüphane Uygulaması";
             // 
-            // pictureBox1
+            // pctrbxGeri
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(38, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 45;
-            this.pictureBox1.TabStop = false;
+            this.pctrbxGeri.BackColor = System.Drawing.Color.Transparent;
+            this.pctrbxGeri.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxGeri.Image")));
+            this.pctrbxGeri.Location = new System.Drawing.Point(12, 13);
+            this.pctrbxGeri.Name = "pctrbxGeri";
+            this.pctrbxGeri.Size = new System.Drawing.Size(20, 20);
+            this.pctrbxGeri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctrbxGeri.TabIndex = 47;
+            this.pctrbxGeri.TabStop = false;
             // 
-            // About
+            // pctrbxSayfayiKapat
+            // 
+            this.pctrbxSayfayiKapat.BackColor = System.Drawing.Color.Transparent;
+            this.pctrbxSayfayiKapat.Image = ((System.Drawing.Image)(resources.GetObject("pctrbxSayfayiKapat.Image")));
+            this.pctrbxSayfayiKapat.Location = new System.Drawing.Point(739, 13);
+            this.pctrbxSayfayiKapat.Name = "pctrbxSayfayiKapat";
+            this.pctrbxSayfayiKapat.Size = new System.Drawing.Size(21, 21);
+            this.pctrbxSayfayiKapat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctrbxSayfayiKapat.TabIndex = 46;
+            this.pctrbxSayfayiKapat.TabStop = false;
+            // 
+            // StaffAbout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -140,26 +138,26 @@
             this.Controls.Add(this.pctrbxGeri);
             this.Controls.Add(this.pctrbxSayfayiKapat);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "About";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxSayfayiKapat)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).EndInit();
+            this.Name = "StaffAbout";
+            this.Text = "StaffAbout";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGeri)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxSayfayiKapat)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pctrbxSayfayiKapat;
-        private System.Windows.Forms.PictureBox pctrbxGeri;
+
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pctrbxGeri;
+        private System.Windows.Forms.PictureBox pctrbxSayfayiKapat;
     }
 }
-
