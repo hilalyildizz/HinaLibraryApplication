@@ -43,7 +43,7 @@ namespace Hina
 
         }
 
-        private void bttnKaydet_Click(object sender, EventArgs e)
+        private void bttnOduncVer_Click(object sender, EventArgs e)
         {
             if (txtbTcKimlik.Text == "" || txtbKitapKodu.Text == "" || dateAlımTarihi.Text == "" || dateTeslimTarihi.Text == "")
             {

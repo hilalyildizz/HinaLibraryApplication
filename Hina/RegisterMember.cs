@@ -21,7 +21,7 @@ namespace Hina
         private void bttnKayitOl_Click(object sender, EventArgs e)
         {
             if (txtbTcKimlik.Text == "" || txtbAd.Text == "" || txtbSoyad.Text == "" || txtbEPosta.Text == "" || txtbSifre.Text == "" ||
-                txtbCadde.Text == "" || txtbSokak.Text == "" || txtbMahalle.Text == "" || txtbDaireAdi.Text == "" || txtbNo.Text == "" ||
+                txtbCadde.Text == "" || txtbSokak.Text == "" || txtbMahalle.Text == "" || txtbBinaAdi.Text == "" || txtbNo.Text == "" ||
                 txtbDaireNo.Text == "" //---|| txtilce.Text == "" || txtil.Text == ""
                 )
             {
@@ -42,7 +42,7 @@ namespace Hina
                         yeniadres.cadde = txtbCadde.Text.ToString();
                         yeniadres.sokak = txtbSokak.Text.ToString();
                         yeniadres.mahalle = txtbMahalle.Text.ToString();
-                        yeniadres.bina = txtbDaireAdi.Text.ToString();
+                        yeniadres.bina = txtbBinaAdi.Text.ToString();
                         yeniadres.binaNo = Convert.ToInt32(txtbNo.Text);
                         yeniadres.daireNo = Convert.ToInt32(txtbDaireNo.Text);
                         //ilce = txtilce.Text.ToString(),

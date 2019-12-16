@@ -111,6 +111,7 @@
             this.bttnOduncVer.TabIndex = 26;
             this.bttnOduncVer.Text = "Ödünç Ver";
             this.bttnOduncVer.UseVisualStyleBackColor = true;
+            this.bttnOduncVer.Click += new System.EventHandler(this.bttnOduncVer_Click);
             // 
             // dateAlımTarihi
             // 
@@ -245,13 +246,6 @@
             // 
             // columnHeader5
             // 
-            this.bttnKaydet.Location = new System.Drawing.Point(262, 255);
-            this.bttnKaydet.Name = "bttnKaydet";
-            this.bttnKaydet.Size = new System.Drawing.Size(75, 23);
-            this.bttnKaydet.TabIndex = 8;
-            this.bttnKaydet.Text = "Kaydet";
-            this.bttnKaydet.UseVisualStyleBackColor = true;
-            this.bttnKaydet.Click += new System.EventHandler(this.bttnKaydet_Click);
             this.columnHeader5.Text = "Yayınevi";
             // 
             // columnHeader6
