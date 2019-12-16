@@ -80,6 +80,7 @@
             this.label6.Size = new System.Drawing.Size(64, 18);
             this.label6.TabIndex = 11;
             this.label6.Text = "Hakkında";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -90,6 +91,7 @@
             this.label5.Size = new System.Drawing.Size(52, 18);
             this.label5.TabIndex = 10;
             this.label5.Text = "Ayarlar";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -100,6 +102,7 @@
             this.label4.Size = new System.Drawing.Size(115, 18);
             this.label4.TabIndex = 9;
             this.label4.Text = "Gecikmiş Kitaplar";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -110,6 +113,7 @@
             this.label3.Size = new System.Drawing.Size(113, 18);
             this.label3.TabIndex = 8;
             this.label3.Text = "Emanet İşlemleri";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -120,6 +124,7 @@
             this.label2.Size = new System.Drawing.Size(90, 18);
             this.label2.TabIndex = 7;
             this.label2.Text = "Üye İşlemleri";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -130,6 +135,7 @@
             this.label1.Size = new System.Drawing.Size(98, 18);
             this.label1.TabIndex = 6;
             this.label1.Text = "Kitap İşlemleri";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pctrbxHakkinda
             // 
@@ -140,6 +146,7 @@
             this.pctrbxHakkinda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrbxHakkinda.TabIndex = 5;
             this.pctrbxHakkinda.TabStop = false;
+            this.pctrbxHakkinda.Click += new System.EventHandler(this.pctrbxHakkinda_Click);
             // 
             // pctrbxAyarlar
             // 
@@ -150,6 +157,7 @@
             this.pctrbxAyarlar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrbxAyarlar.TabIndex = 4;
             this.pctrbxAyarlar.TabStop = false;
+            this.pctrbxAyarlar.Click += new System.EventHandler(this.pctrbxAyarlar_Click);
             // 
             // pctrbxGecikmisKitaplar
             // 
@@ -160,6 +168,7 @@
             this.pctrbxGecikmisKitaplar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrbxGecikmisKitaplar.TabIndex = 3;
             this.pctrbxGecikmisKitaplar.TabStop = false;
+            this.pctrbxGecikmisKitaplar.Click += new System.EventHandler(this.pctrbxGecikmisKitaplar_Click);
             // 
             // pctrbxUyeIslemleri
             // 
@@ -170,6 +179,7 @@
             this.pctrbxUyeIslemleri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrbxUyeIslemleri.TabIndex = 2;
             this.pctrbxUyeIslemleri.TabStop = false;
+            this.pctrbxUyeIslemleri.Click += new System.EventHandler(this.pctrbxUyeIslemleri_Click);
             // 
             // pctrbxEmanetIslemleri
             // 
@@ -180,6 +190,7 @@
             this.pctrbxEmanetIslemleri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrbxEmanetIslemleri.TabIndex = 1;
             this.pctrbxEmanetIslemleri.TabStop = false;
+            this.pctrbxEmanetIslemleri.Click += new System.EventHandler(this.pctrbxEmanetIslemleri_Click);
             // 
             // pctrbxKitapIslemleri
             // 
@@ -190,6 +201,7 @@
             this.pctrbxKitapIslemleri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrbxKitapIslemleri.TabIndex = 0;
             this.pctrbxKitapIslemleri.TabStop = false;
+            this.pctrbxKitapIslemleri.Click += new System.EventHandler(this.pctrbxKitapIslemleri_Click);
             // 
             // StaffHome
             // 

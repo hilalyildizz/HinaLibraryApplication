@@ -207,6 +207,7 @@
             this.bttnKayitOl.TabIndex = 24;
             this.bttnKayitOl.Text = "Kayıt Ol";
             this.bttnKayitOl.UseVisualStyleBackColor = true;
+            this.bttnKayitOl.Click += new System.EventHandler(this.bttnKayitOl_Click);
             // 
             // panel1
             // 
@@ -371,6 +372,7 @@
             this.pctrbxGeri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrbxGeri.TabIndex = 26;
             this.pctrbxGeri.TabStop = false;
+            this.pctrbxGeri.Click += new System.EventHandler(this.pctrbxGeri_Click);
             // 
             // pctrbxSayfayiKapat
             // 
@@ -382,6 +384,7 @@
             this.pctrbxSayfayiKapat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrbxSayfayiKapat.TabIndex = 27;
             this.pctrbxSayfayiKapat.TabStop = false;
+            this.pctrbxSayfayiKapat.Click += new System.EventHandler(this.pctrbxSayfayiKapat_Click);
             // 
             // RegisterMember
             // 

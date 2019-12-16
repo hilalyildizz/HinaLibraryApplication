@@ -16,7 +16,7 @@ namespace Hina
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BookLend());
+            Application.Run(new Login());
         }
     }
 }

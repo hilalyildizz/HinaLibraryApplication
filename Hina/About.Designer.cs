@@ -44,40 +44,40 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("AlternateGothic2 BT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(333, 160);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 18);
+            this.label1.Size = new System.Drawing.Size(159, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Kütüphane Uygulaması";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("AlternateGothic2 BT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(339, 178);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 18);
+            this.label2.Size = new System.Drawing.Size(107, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Copyright 2019";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("AlternateGothic2 BT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.Location = new System.Drawing.Point(355, 199);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 18);
+            this.label3.Size = new System.Drawing.Size(82, 18);
             this.label3.TabIndex = 2;
             this.label3.Text = "Version 1,0";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("AlternateGothic2 BT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.Location = new System.Drawing.Point(340, 226);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(97, 30);
+            this.label6.Size = new System.Drawing.Size(154, 31);
             this.label6.TabIndex = 5;
             this.label6.Text = "HAKKINDA";
             // 
@@ -114,6 +114,7 @@
             this.pctrbxGeri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrbxGeri.TabIndex = 8;
             this.pctrbxGeri.TabStop = false;
+            this.pctrbxGeri.Click += new System.EventHandler(this.pctrbxGeri_Click);
             // 
             // About
             // 

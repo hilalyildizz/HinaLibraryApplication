@@ -49,6 +49,7 @@
             this.bttnPersonel.TabIndex = 0;
             this.bttnPersonel.Text = "Personel";
             this.bttnPersonel.UseVisualStyleBackColor = false;
+            this.bttnPersonel.Click += new System.EventHandler(this.bttnPersonel_Click);
             // 
             // bttnKullanici
             // 
@@ -59,6 +60,7 @@
             this.bttnKullanici.TabIndex = 1;
             this.bttnKullanici.Text = "Kullanıcı";
             this.bttnKullanici.UseVisualStyleBackColor = true;
+            this.bttnKullanici.Click += new System.EventHandler(this.bttnKullanici_Click);
             // 
             // pctrbxGeri
             // 
@@ -70,6 +72,7 @@
             this.pctrbxGeri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrbxGeri.TabIndex = 2;
             this.pctrbxGeri.TabStop = false;
+            this.pctrbxGeri.Click += new System.EventHandler(this.pctrbxGeri_Click);
             // 
             // pctrbxSayfayiKapat
             // 
@@ -81,6 +84,7 @@
             this.pctrbxSayfayiKapat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrbxSayfayiKapat.TabIndex = 3;
             this.pctrbxSayfayiKapat.TabStop = false;
+            this.pctrbxSayfayiKapat.Click += new System.EventHandler(this.pctrbxSayfayiKapat_Click);
             // 
             // RegisterOption
             // 
